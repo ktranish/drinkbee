@@ -1,4 +1,3 @@
-import { Logo } from "@/components/logo";
 import { Github, Instagram, Twitter } from "lucide-react";
 import Link from "next/link";
 
@@ -46,7 +45,12 @@ export function Footer() {
           {/* About section */}
           <div>
             <div className="mb-4">
-              <Logo />
+              <Link href="/" className="flex items-center space-x-2">
+                <div className="logo-animation">
+                  <span className="text-4xl">🐝</span>
+                </div>
+                <span className="text-2xl font-bold text-yellow">DrinkBee</span>
+              </Link>
             </div>
             <p className="mb-4 text-gray-400">
               DrinkBee erbjuder roliga och interaktiva spel för fester och
