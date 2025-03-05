@@ -9,7 +9,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DrinkBee - Party Games",
+  title: "Drinkbee - Party Games",
   description: "Fun party games for everyone",
   generator: "v0.dev",
 };

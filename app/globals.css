@@ -64,14 +64,19 @@
 }
 
 .game-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1),
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    filter 0.3s ease;
+  box-shadow:
+    0 10px 25px -5px rgba(0, 0, 0, 0.1),
     0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .game-card:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3),
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.3),
     0 10px 10px -5px rgba(0, 0, 0, 0.2);
   filter: brightness(1.05);
 }
@@ -106,7 +111,6 @@
 
 .next-button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 /* Add this to ensure game card text is readable in light mode */

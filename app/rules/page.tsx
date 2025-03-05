@@ -10,7 +10,7 @@ export default function RulesPage() {
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">Spelregler</h1>
         <p className="text-muted-foreground text-lg">
-          Välkommen till DrinkBee&apos;s spelregler! Här hittar du detaljerade
+          Välkommen till Drinkbee&apos;s spelregler! Här hittar du detaljerade
           instruktioner för alla våra spel.
         </p>
       </div>

@@ -129,7 +129,7 @@ export default function GamePage({ params }: { params: { slug: string } }) {
 
         <Button
           onClick={handleNextQuestion}
-          className="next-button flex items-center bg-yellow px-8 py-6 text-lg font-bold text-black hover:bg-white"
+          className="next-button flex items-center bg-yellow px-8 py-6 text-lg font-bold text-black"
         >
           Nästa
           <ArrowRight className="ml-2 h-5 w-5" />

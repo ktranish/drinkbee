@@ -39,7 +39,7 @@ const gamesData: { [key: string]: GamesData } = {
     setup: [
       "Dela upp spelarna i två eller fler jämna lag.",
       "Bestäm en tidsgräns för varje runda (vanligtvis 60 sekunder).",
-      "Förbered ordkort eller använd DrinkBee-appen för att generera ord.",
+      "Förbered ordkort eller använd Drinkbee-appen för att generera ord.",
     ],
     rules: [
       "En spelare från det aktiva laget tar ett kort och försöker få sitt lag att gissa ordet.",
@@ -68,10 +68,10 @@ const gamesData: { [key: string]: GamesData } = {
     players: "2+ spelare",
     duration: "Varierar (15-60 minuter)",
     difficulty: "Lätt",
-    materials: ["Frågor från DrinkBee-appen eller kort"],
+    materials: ["Frågor från Drinkbee-appen eller kort"],
     setup: [
       "Samla alla spelare i en cirkel.",
-      "Förbered frågorna genom att använda DrinkBee-appen eller utskrivna kort.",
+      "Förbered frågorna genom att använda Drinkbee-appen eller utskrivna kort.",
     ],
     rules: [
       "Turas om att dra en fråga.",
@@ -99,7 +99,7 @@ const gamesData: { [key: string]: GamesData } = {
     difficulty: "Lätt",
     materials: [
       "Drycker (alkoholhaltiga eller alkoholfria)",
-      "Eventuellt frågor från DrinkBee-appen",
+      "Eventuellt frågor från Drinkbee-appen",
     ],
     setup: [
       "Samla alla spelare i en cirkel.",
@@ -130,10 +130,10 @@ const gamesData: { [key: string]: GamesData } = {
     players: "4+ spelare",
     duration: "15-30 minuter",
     difficulty: "Lätt",
-    materials: ["Lista med påståenden (eller använd DrinkBee-appen)"],
+    materials: ["Lista med påståenden (eller använd Drinkbee-appen)"],
     setup: [
       "Samla alla spelare i en cirkel så att alla kan se varandra.",
-      "Förbered en lista med påståenden eller använd DrinkBee-appen.",
+      "Förbered en lista med påståenden eller använd Drinkbee-appen.",
     ],
     rules: [
       "En spelare läser upp ett påstående, till exempel 'Peka på den som mest sannolikt skulle somna på en fest'.",
@@ -192,7 +192,7 @@ const gamesData: { [key: string]: GamesData } = {
     duration: "15-45 minuter",
     difficulty: "Lätt",
     materials: [
-      "Lista med frågor och utmaningar (eller använd DrinkBee-appen)",
+      "Lista med frågor och utmaningar (eller använd Drinkbee-appen)",
     ],
     setup: [
       "Samla alla spelare i en cirkel.",
@@ -251,7 +251,7 @@ const gamesData: { [key: string]: GamesData } = {
     duration: "15-45 minuter",
     difficulty: "Lätt till medel",
     materials: [
-      "En musikspelare (Spotify, YouTube, DrinkBee-appen eller en spellista)",
+      "En musikspelare (Spotify, YouTube, Drinkbee-appen eller en spellista)",
       "Penna och papper för poängräkning",
     ],
     setup: [
@@ -285,7 +285,7 @@ const gamesData: { [key: string]: GamesData } = {
     duration: "15-45 minuter",
     difficulty: "Lätt till medel",
     materials: [
-      "Lappar med ord eller använd DrinkBee-appen",
+      "Lappar med ord eller använd Drinkbee-appen",
       "Timer",
       "Poängräkning (papper och penna)",
     ],
@@ -320,7 +320,7 @@ const gamesData: { [key: string]: GamesData } = {
     duration: "15-60 minuter",
     difficulty: "Lätt till svår (beroende på frågorna)",
     materials: [
-      "Lista med frågor (eller använd DrinkBee-appen)",
+      "Lista med frågor (eller använd Drinkbee-appen)",
       "Poängräkning (papper och penna)",
       "Timer (valfritt)",
     ],
@@ -354,13 +354,13 @@ const gamesData: { [key: string]: GamesData } = {
     duration: "15-60 minuter",
     difficulty: "Lätt till svår (beroende på utmaningarna)",
     materials: [
-      "Lista med utmaningar (eller använd DrinkBee-appen)",
+      "Lista med utmaningar (eller använd Drinkbee-appen)",
       "Timer (valfritt)",
       "Eventuella rekvisita för vissa utmaningar",
     ],
     setup: [
       "Samla spelarna i en cirkel.",
-      "Förbered en lista med utmaningar eller använd DrinkBee-appen för att generera dem.",
+      "Förbered en lista med utmaningar eller använd Drinkbee-appen för att generera dem.",
       "Bestäm regler för att hoppa över utmaningar (t.ex. dricka, få minuspoäng eller en straffutmaning).",
     ],
     rules: [
@@ -388,7 +388,7 @@ const gamesData: { [key: string]: GamesData } = {
     duration: "15-45 minuter",
     difficulty: "Lätt till medel",
     materials: [
-      "Lista med frågor (eller använd DrinkBee-appen)",
+      "Lista med frågor (eller använd Drinkbee-appen)",
       "Papper och penna för poäng (valfritt)",
     ],
     setup: [

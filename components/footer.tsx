@@ -49,11 +49,11 @@ export function Footer() {
                 <div className="logo-animation">
                   <span className="text-4xl">🐝</span>
                 </div>
-                <span className="text-2xl font-bold text-yellow">DrinkBee</span>
+                <span className="text-2xl font-bold text-yellow">Drinkbee</span>
               </Link>
             </div>
             <p className="mb-4 text-gray-400">
-              DrinkBee erbjuder roliga och interaktiva spel för fester och
+              Drinkbee erbjuder roliga och interaktiva spel för fester och
               sociala sammankomster.
             </p>
             <div className="flex space-x-4">
@@ -158,7 +158,7 @@ export function Footer() {
         {/* Bottom section with copyright */}
         <div className="mt-8 border-t border-gray-800 pt-8 text-center text-sm text-gray-500">
           <p>
-            &copy; {new Date().getFullYear()} DrinkBee. Alla rättigheter
+            &copy; {new Date().getFullYear()} Drinkbee. Alla rättigheter
             förbehållna.
           </p>
         </div>

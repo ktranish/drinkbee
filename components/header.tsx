@@ -11,7 +11,7 @@ export function Header() {
           <span className="text-4xl">🐝</span>
         </div>
         <span className="text-2xl font-bold text-black dark:text-yellow">
-          DrinkBee
+          Drinkbee
         </span>
       </Link>
       <div className="flex items-center space-x-4">

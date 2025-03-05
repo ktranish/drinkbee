@@ -250,7 +250,7 @@ export default function Home() {
                   <span className="relative z-10">roligare</span>
                   <span className="absolute -bottom-1 -left-2 -right-2 -top-1 -rotate-1 rounded-md bg-black dark:bg-yellow md:-bottom-0 md:-left-3 md:-right-3 md:-top-0" />
                 </span>{" "}
-                med DrinkBee
+                med Drinkbee
               </h1>
               <p className="max-w-lg text-lg text-gray-700 dark:text-gray-300 md:text-xl">
                 Upptäck våra interaktiva spel som garanterar skratt och
@@ -270,7 +270,7 @@ export default function Home() {
             </div>
 
             {/* Self-animating game cards */}
-            <div className="relative h-[400px] md:h-[500px] md:w-1/2">
+            <div className="relative h-[400px] w-[80%] md:h-[500px] md:w-1/2">
               {heroCards.map((card, index) => {
                 const position = animationPositions[animationStep][index];
 

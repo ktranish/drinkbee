@@ -44,7 +44,7 @@ export default function BlogPage() {
 
         <div className="mb-16 text-center">
           <h1 className="mb-4 text-4xl font-bold text-black dark:text-white md:text-5xl">
-            DrinkBee Blog
+            Drinkbee Blog
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-400">
             Tips, tricks och inspiration för att göra dina spelkvällar ännu
