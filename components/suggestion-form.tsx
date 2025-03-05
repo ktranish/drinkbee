@@ -81,7 +81,7 @@ export function SuggestionForm() {
           {/* Success message */}
           <div
             className={cn(
-              "absolute left-1/2 top-0 -translate-x-1/2 transform transition-all duration-300",
+              "absolute left-1/2 top-0 w-full -translate-x-1/2 transform transition-all duration-300",
               showSuccess
                 ? "translate-y-16 opacity-100"
                 : "pointer-events-none translate-y-8 opacity-0",

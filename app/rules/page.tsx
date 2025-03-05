@@ -2,6 +2,91 @@ import { Breadcrumb } from "@/components/breadcrumb";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+// Game data with basic info for the overview page
+const gamesOverview = [
+  {
+    title: "Med andra ord",
+    emoji: "🎯",
+    slug: "med-andra-ord",
+    description:
+      "Ett ordförklaringsspel där du ska få ditt lag att gissa ett ord utan att använda förbjudna termer.",
+  },
+  {
+    title: "200 Frågor",
+    emoji: "❓",
+    slug: "200-fragor",
+    description:
+      "Ett frågespel som hjälper er att lära känna varandra bättre genom personliga och utmanande frågor.",
+  },
+  {
+    title: "Jag har aldrig",
+    emoji: "🙅‍♂️",
+    slug: "jag-har-aldrig",
+    description:
+      "Ett avslöjande spel där spelare berättar om saker de aldrig har gjort, och de som har gjort det måste dricka.",
+  },
+  {
+    title: "Pekleken",
+    emoji: "👉",
+    slug: "pekleken",
+    description:
+      "Ett enkelt men roligt spel där spelarna pekar på varandra baserat på olika påståenden.",
+  },
+  {
+    title: "Dryckesspel",
+    emoji: "🍻",
+    slug: "dryckesspel",
+    description:
+      "Ett klassiskt dryckesspel med olika regler och utmaningar kopplade till en kortlek.",
+  },
+  {
+    title: "Sanning eller Konka",
+    emoji: "🎭",
+    slug: "sanning-eller-konka",
+    description:
+      "Välj mellan att svara ärligt på en fråga eller utföra en utmaning.",
+  },
+  {
+    title: "Vem i rummet",
+    emoji: "👥",
+    slug: "vem-i-rummet",
+    description:
+      "Svara på frågor om vilken person i rummet som mest sannolikt skulle göra olika saker.",
+  },
+  {
+    title: "Gissa låten",
+    emoji: "🎵",
+    slug: "gissa-laten",
+    description:
+      "Testa dina musikkunskaper genom att gissa låtar baserat på korta ljudklipp.",
+  },
+  {
+    title: "Charades",
+    emoji: "🎬",
+    slug: "charades",
+    description: "Förklara ord eller fraser genom att agera utan att prata.",
+  },
+  {
+    title: "Quiz",
+    emoji: "🧠",
+    slug: "quiz",
+    description: "Testa dina kunskaper inom olika ämnen med våra quizfrågor.",
+  },
+  {
+    title: "Utmaningar",
+    emoji: "🔥",
+    slug: "utmaningar",
+    description: "Våga utföra roliga och utmanande uppgifter för att få poäng.",
+  },
+  {
+    title: "Hot Seat",
+    emoji: "🪑",
+    slug: "hot-seat",
+    description:
+      "En person hamnar i 'hot seat' och måste svara ärligt på alla frågor från gruppen.",
+  },
+];
+
 export default function RulesPage() {
   return (
     <div className="space-y-8">
@@ -10,64 +95,50 @@ export default function RulesPage() {
       <div className="space-y-4">
         <h1 className="text-4xl font-bold">Spelregler</h1>
         <p className="text-muted-foreground text-lg">
-          Välkommen till Drinkbee&apos;s spelregler! Här hittar du detaljerade
+          Välkommen till DrinkBee's spelregler! Här hittar du detaljerade
           instruktioner för alla våra spel.
         </p>
       </div>
 
-      <div className="grid gap-6">
-        <div className="rounded-lg border bg-card p-6">
-          <h2 className="mb-4 text-2xl font-bold">
-            Hur använder jag reglerna?
-          </h2>
-          <p className="mb-4">
-            Välj ett spel från menyn till vänster för att se detaljerade regler
-            och instruktioner. Varje spel har:
-          </p>
-          <ul className="mb-6 list-disc space-y-2 pl-6">
-            <li>Grundläggande regler och mål</li>
-            <li>Steg-för-steg instruktioner</li>
-            <li>Tips för att göra spelet roligare</li>
-            <li>Varianter och anpassningar</li>
-          </ul>
-          <p>
-            Du kan anpassa reglerna efter din grupp och situation. Det
-            viktigaste är att alla har kul!
-          </p>
-        </div>
+      <div className="rounded-lg border bg-card p-6">
+        <h2 className="mb-4 text-2xl font-bold">Hur använder jag reglerna?</h2>
+        <p className="mb-4">
+          Välj ett spel från listan nedan för att se detaljerade regler och
+          instruktioner. Varje spel har:
+        </p>
+        <ul className="mb-6 list-disc space-y-2 pl-6">
+          <li>Grundläggande regler och mål</li>
+          <li>Steg-för-steg instruktioner</li>
+          <li>Tips för att göra spelet roligare</li>
+          <li>Varianter och anpassningar</li>
+        </ul>
+        <p>
+          Du kan anpassa reglerna efter din grupp och situation. Det viktigaste
+          är att alla har kul!
+        </p>
+      </div>
 
-        <div className="rounded-lg border bg-card p-6">
-          <h2 className="mb-4 text-2xl font-bold">Populära spel</h2>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <div className="rounded-lg border bg-card p-6">
+        <h2 className="mb-6 text-2xl font-bold">Alla våra spel</h2>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {gamesOverview.map((game) => (
             <Link
-              href="/rules/med-andra-ord"
-              className="block rounded-md border p-4 transition-colors hover:bg-accent dark:hover:text-black"
+              key={game.slug}
+              href={`/rules/${game.slug}`}
+              className="block h-full rounded-md border p-4 transition-colors hover:bg-accent dark:hover:text-black"
             >
-              <div className="flex items-center gap-3">
-                <span className="text-3xl">🎯</span>
-                <div>
-                  <h3 className="font-medium">Med andra ord</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Förklara ord utan att använda förbjudna termer
-                  </p>
+              <div className="flex h-full flex-col">
+                <div className="mb-3 flex items-center gap-3">
+                  <span className="text-3xl">{game.emoji}</span>
+                  <h3 className="text-lg font-medium">{game.title}</h3>
                 </div>
+                <p className="text-muted-foreground flex-grow text-sm">
+                  {game.description}
+                </p>
+                <div className="mt-4 text-xs font-medium">Läs reglerna →</div>
               </div>
             </Link>
-            <Link
-              href="/rules/jag-har-aldrig"
-              className="block rounded-md border p-4 transition-colors hover:bg-accent dark:hover:text-black"
-            >
-              <div className="flex items-center gap-3">
-                <span className="text-3xl">🙅‍♂️</span>
-                <div>
-                  <h3 className="font-medium">Jag har aldrig</h3>
-                  <p className="text-muted-foreground text-sm">
-                    Avslöja hemligheter och drick om du har gjort det
-                  </p>
-                </div>
-              </div>
-            </Link>
-          </div>
+          ))}
         </div>
       </div>
 
