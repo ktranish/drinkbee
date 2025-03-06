@@ -271,34 +271,36 @@ export default function Home() {
 
             {/* Self-animating game cards */}
             <div className="relative h-[400px] w-full md:h-[500px] md:w-1/2">
-              {heroCards.map((card, index) => {
-                const position = animationPositions[animationStep][index];
+              <div className="relative mx-auto max-w-xs md:mx-0 md:max-w-none">
+                {heroCards.map((card, index) => {
+                  const position = animationPositions[animationStep][index];
 
-                return (
-                  <div
-                    key={card.slug}
-                    className="duration-2000 absolute w-64 transition-all ease-in-out md:w-72"
-                    style={{
-                      top: `${position.top}px`,
-                      right: `${position.right}px`,
-                      transform: `rotate(${position.rotate}deg) scale(${position.scale})`,
-                      zIndex: position.zIndex,
-                      filter: `blur(${position.blur}px)`,
-                      opacity: position.opacity,
-                      transitionDuration: "2s",
-                    }}
-                  >
-                    <Link href={`/games/${card.slug}`}>
-                      <GameCard
-                        title={card.title}
-                        emoji={card.emoji}
-                        slug={card.slug}
-                        color={card.color}
-                      />
-                    </Link>
-                  </div>
-                );
-              })}
+                  return (
+                    <div
+                      key={card.slug}
+                      className="duration-2000 absolute w-64 transition-all ease-in-out md:w-72"
+                      style={{
+                        top: `${position.top}px`,
+                        right: `${position.right}px`,
+                        transform: `rotate(${position.rotate}deg) scale(${position.scale})`,
+                        zIndex: position.zIndex,
+                        filter: `blur(${position.blur}px)`,
+                        opacity: position.opacity,
+                        transitionDuration: "2s",
+                      }}
+                    >
+                      <Link href={`/games/${card.slug}`}>
+                        <GameCard
+                          title={card.title}
+                          emoji={card.emoji}
+                          slug={card.slug}
+                          color={card.color}
+                        />
+                      </Link>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
