@@ -270,7 +270,7 @@ export default function Home() {
             </div>
 
             {/* Self-animating game cards */}
-            <div className="relative h-[400px] w-[80%] md:h-[500px] md:w-1/2">
+            <div className="relative h-[400px] w-full md:h-[500px] md:w-1/2">
               {heroCards.map((card, index) => {
                 const position = animationPositions[animationStep][index];
 
