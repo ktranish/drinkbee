@@ -75,10 +75,10 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/alla-spel"
+                  href="/kontakta-oss"
                   className="text-gray-400 transition-colors hover:text-yellow"
                 >
-                  Våra spel
+                  Kontakta oss
                 </Link>
               </li>
             </ul>
@@ -88,6 +88,14 @@ export function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-bold text-yellow">Kategorier</h3>
             <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/alla-spel"
+                  className="text-gray-400 transition-colors hover:text-yellow"
+                >
+                  Alla spel
+                </Link>
+              </li>
               <li>
                 <Link
                   href="/dricklekar-och-drickspel"

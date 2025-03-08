@@ -22,11 +22,11 @@ export function Header() {
               Regler
             </Button>
           </Link>
-          <Link href="/blogg">
+          {/* <Link href="/blogg">
             <Button variant="outline" className="font-bold uppercase">
               Blogg
             </Button>
-          </Link>
+          </Link> */}
           <Link href="/alla-spel">
             <Button variant="game" className="font-bold uppercase">
               Våra Spel
