@@ -73,6 +73,14 @@ export function Footer() {
                   Blog
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/games"
+                  className="text-gray-400 transition-colors hover:text-yellow"
+                >
+                  Våra spel
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -81,22 +89,17 @@ export function Footer() {
             <h3 className="mb-4 text-lg font-bold text-yellow">Kategorier</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/" className="text-gray-400">
-                  Alla Spel
-                </Link>
-              </li>
-              <li>
-                <Link href="/" className="text-gray-400">
+                <Link href="/games" className="text-gray-400">
                   Drickspel och Dricklekar
                 </Link>
               </li>
               <li>
-                <Link href="/" className="text-gray-400">
+                <Link href="/games" className="text-gray-400">
                   Sällskapspel
                 </Link>
               </li>
               <li>
-                <Link href="/" className="text-gray-400">
+                <Link href="/games" className="text-gray-400">
                   Quiz
                 </Link>
               </li>
@@ -155,54 +158,6 @@ export function Footer() {
                   className="text-gray-400 transition-colors hover:text-yellow"
                 >
                   Sanning eller konka
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-400 transition-colors hover:text-yellow"
-                >
-                  Vem i rummet
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-400 transition-colors hover:text-yellow"
-                >
-                  Gissa låten
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-400 transition-colors hover:text-yellow"
-                >
-                  Charades
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-400 transition-colors hover:text-yellow"
-                >
-                  0-100 Frågor
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-400 transition-colors hover:text-yellow"
-                >
-                  Utmaningar
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/"
-                  className="text-gray-400 transition-colors hover:text-yellow"
-                >
-                  Rygg mot rygg
                 </Link>
               </li>
             </ul>
