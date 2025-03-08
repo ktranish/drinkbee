@@ -24,7 +24,7 @@ export function GameCard({ title, emoji, slug, color }: GameCardProps) {
         </span>
       </div>
 
-      <Link href={`/games/${slug}`} className="mt-4">
+      <Link href={`/alla-spel/${slug}`} className="mt-4">
         <Button variant="play" className="font-bold uppercase">
           Spela
         </Button>

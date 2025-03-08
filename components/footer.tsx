@@ -75,7 +75,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/games"
+                  href="/alla-spel"
                   className="text-gray-400 transition-colors hover:text-yellow"
                 >
                   Våra spel
@@ -89,17 +89,17 @@ export function Footer() {
             <h3 className="mb-4 text-lg font-bold text-yellow">Kategorier</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/games" className="text-gray-400">
+                <Link href="/alla-spel" className="text-gray-400">
                   Drickspel och Dricklekar
                 </Link>
               </li>
               <li>
-                <Link href="/games" className="text-gray-400">
+                <Link href="/alla-spel" className="text-gray-400">
                   Sällskapspel
                 </Link>
               </li>
               <li>
-                <Link href="/games" className="text-gray-400">
+                <Link href="/alla-spel" className="text-gray-400">
                   Quiz
                 </Link>
               </li>

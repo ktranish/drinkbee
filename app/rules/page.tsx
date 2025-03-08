@@ -144,7 +144,7 @@ export default function RulesPage() {
       </div>
 
       <div className="mt-8 flex justify-center">
-        <Link href="/games">
+        <Link href="/alla-spel">
           <Button variant="game" className="font-bold uppercase">
             Börja spela
           </Button>

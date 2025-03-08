@@ -121,7 +121,7 @@ export default function SpinTheBottlePage() {
       <section className="container mx-auto flex max-w-6xl flex-grow flex-col items-center px-4 py-12">
         <Breadcrumb
           items={[
-            { label: "Spel", href: "/games" },
+            { label: "Spel", href: "/alla-spel" },
             { label: "Snurra flaskan" },
           ]}
           className="mb-8 self-start"

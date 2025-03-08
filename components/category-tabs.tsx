@@ -26,7 +26,7 @@ export function CategoryTabs({
   };
 
   return (
-    <div className="mb-12 flex animate-fade-in flex-wrap justify-center gap-2 md:gap-4">
+    <div className="mb-12 flex flex-wrap justify-center gap-2 md:gap-4">
       {includeAll && (
         <Button
           variant="category"

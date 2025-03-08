@@ -70,7 +70,7 @@ export default function GamePage({ params }: { params: { slug: string } }) {
 
       <section className="container mx-auto flex max-w-6xl flex-grow flex-col items-center px-4 py-12">
         <Breadcrumb
-          items={[{ label: "Spel", href: "/games" }, { label: gameTitle }]}
+          items={[{ label: "Spel", href: "/alla-spel" }, { label: gameTitle }]}
           className="mb-8 self-start"
         />
 

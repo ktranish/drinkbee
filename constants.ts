@@ -1,4 +1,4 @@
-export type Category = (typeof ALL_GAMES)[number]["category"][number];
+export type Category = (typeof ALL_GAMES)[number]["category"];
 
 export const ALL_GAMES = [
   {
@@ -6,84 +6,84 @@ export const ALL_GAMES = [
     emoji: "🎯",
     slug: "med-andra-ord",
     color: "bg-gray-50",
-    category: ["sallskapsspel"],
+    category: "sallskapsspel",
   },
   {
     title: "200 Frågor",
     emoji: "❓",
     slug: "200-fragor",
     color: "bg-blue-50",
-    category: ["sallskapsspel", "quiz"],
+    category: "quiz",
   },
   {
     title: "Jag har aldrig",
     emoji: "🙅‍♂️",
     slug: "jag-har-aldrig",
     color: "bg-yellow-50",
-    category: ["dricklekar-och-drickspel"],
+    category: "dricklekar-och-drickspel",
   },
   {
     title: "Pekleken",
     emoji: "👉",
     slug: "pekleken",
     color: "bg-purple-50",
-    category: ["dricklekar-och-drickspel"],
+    category: "dricklekar-och-drickspel",
   },
   {
     title: "Snurra flaskan",
     emoji: "🍾",
     slug: "snurra-flaskan",
     color: "bg-green-50",
-    category: ["dricklekar-och-drickspel"],
+    category: "dricklekar-och-drickspel",
   },
   {
     title: "Sanning eller Konka",
     emoji: "🎭",
     slug: "sanning-eller-konka",
     color: "bg-blue-50",
-    category: ["sallskapsspel"],
+    category: "sallskapsspel",
   },
   {
     title: "Vem i rummet",
     emoji: "👥",
     slug: "vem-i-rummet",
     color: "bg-purple-50",
-    category: ["dricklekar-och-drickspel"],
+    category: "dricklekar-och-drickspel",
   },
   {
     title: "Gissa låten",
     emoji: "🎵",
     slug: "gissa-laten",
     color: "bg-blue-50",
-    category: ["sallskapsspel", "quiz"],
+    category: "quiz",
   },
   {
     title: "Charades",
     emoji: "🎬",
     slug: "charades",
     color: "bg-amber-50",
-    category: ["sallskapsspel"],
+    category: "sallskapsspel",
   },
   {
     title: "0-100 Frågor",
     emoji: "🧠",
     slug: "0-100-fragor",
     color: "bg-purple-50",
-    category: ["sallskapsspel", "quiz"],
+    category: "quiz",
   },
   {
     title: "Utmaningar",
     emoji: "🔥",
     slug: "utmaningar",
     color: "bg-red-50",
-    category: ["sallskapsspel"],
+    category: "sallskapsspel",
   },
   {
     title: "Rygg mot rygg",
     emoji: "🪑",
     slug: "rygg-mot-rygg",
     color: "bg-orange-50",
-    category: ["dricklekar-och-drickspel"],
+    category: "dricklekar-och-drickspel",
   },
 ] as const;
 

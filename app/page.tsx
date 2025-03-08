@@ -26,7 +26,7 @@ export default function Home() {
         id="all-games"
         className="container mx-auto max-w-6xl px-4 py-20"
       >
-        <h2 className="mb-8 animate-fade-in text-center text-3xl font-bold text-black dark:text-white md:text-4xl">
+        <h2 className="mb-8 text-center text-3xl font-bold text-black dark:text-white md:text-4xl">
           Våra Spel
         </h2>
 
@@ -38,9 +38,7 @@ export default function Home() {
 
         <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {ALL_GAMES.filter((item) =>
-            category === "all"
-              ? true
-              : item.category.includes(category as never),
+            category === "all" ? true : item.category === category,
           ).map((game) => (
             <GameCard
               key={game.slug}
@@ -53,7 +51,7 @@ export default function Home() {
         </div>
 
         <div className="mt-12 flex justify-center">
-          <Link href="/games">
+          <Link href="/alla-spel">
             <Button variant="game" className="font-bold uppercase">
               Visa alla spel
               <ArrowRight className="ml-2 h-5 w-5" />

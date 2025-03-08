@@ -27,7 +27,7 @@ export function Header() {
               Blog
             </Button>
           </Link>
-          <Link href="/games">
+          <Link href="/alla-spel">
             <Button variant="game" className="font-bold uppercase">
               Våra Spel
             </Button>

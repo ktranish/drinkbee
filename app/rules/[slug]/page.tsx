@@ -529,7 +529,7 @@ export default function GameRulesPage({
         </div>
 
         <div className="mt-8 flex justify-center">
-          <Link href={`/games/${params.slug}`}>
+          <Link href={`/alla-spel/${params.slug}`}>
             <Button
               variant="game"
               className="flex items-center font-bold uppercase"

@@ -47,7 +47,7 @@ export function Hero() {
               underhållning på din nästa fest
             </p>
             <div className="flex justify-center md:justify-start">
-              <Link href="/games">
+              <Link href="/alla-spel">
                 <Button
                   variant="game"
                   className="px-8 py-6 text-lg font-bold uppercase"
@@ -79,7 +79,7 @@ export function Hero() {
                       transitionDuration: "2s",
                     }}
                   >
-                    <Link href={`/games/${card.slug}`}>
+                    <Link href={`/alla-spel/${card.slug}`}>
                       <GameCard
                         title={card.title}
                         emoji={card.emoji}
