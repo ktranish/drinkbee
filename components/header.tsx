@@ -17,7 +17,7 @@ export function Header() {
       <div className="flex items-center space-x-4">
         <ThemeToggle />
         <div className="hidden space-x-4 md:flex">
-          <Link href="/rules">
+          <Link href="/spelregler">
             <Button variant="outline" className="font-bold uppercase">
               Regler
             </Button>

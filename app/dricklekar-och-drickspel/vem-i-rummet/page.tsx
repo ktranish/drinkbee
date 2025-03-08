@@ -49,7 +49,7 @@ export default function GamePage() {
         </h1>
 
         <div className="mb-8 flex justify-center">
-          <Link href={`/rules/vem-i-rummet`}>
+          <Link href={`/spelregler/vem-i-rummet`}>
             <Button variant="outline" className="flex items-center gap-2">
               <BookOpen className="h-4 w-4" />
               <span>Visa spelregler</span>

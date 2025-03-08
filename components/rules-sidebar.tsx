@@ -1,51 +1,12 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { GAME_CATEGORIES } from "@/constants";
 import { cn } from "@/lib/utils";
 import { ChevronDown, ChevronRight, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-
-// Game categories with their respective games
-const gameCategories = [
-  {
-    name: "Popular",
-    games: [
-      { title: "Med andra ord", slug: "med-andra-ord", emoji: "🎯" },
-      { title: "200 Frågor", slug: "200-fragor", emoji: "❓" },
-      { title: "Jag har aldrig", slug: "jag-har-aldrig", emoji: "🙅‍♂️" },
-      { title: "Pekleken", slug: "pekleken", emoji: "👉" },
-    ],
-  },
-  {
-    name: "Party",
-    games: [
-      { title: "Snurra flaskan", slug: "snurra-flaskan", emoji: "🍾" },
-      {
-        title: "Sanning eller Konka",
-        slug: "sanning-eller-konka",
-        emoji: "🎭",
-      },
-      { title: "Vem i rummet", slug: "vem-i-rummet", emoji: "👥" },
-    ],
-  },
-  {
-    name: "Fun",
-    games: [
-      { title: "Gissa låten", slug: "gissa-laten", emoji: "🎵" },
-      { title: "Charades", slug: "charades", emoji: "🎬" },
-      { title: "0-100 Frågor", slug: "0-100-fragor", emoji: "🧠" },
-    ],
-  },
-  {
-    name: "Extreme",
-    games: [
-      { title: "Utmaningar", slug: "utmaningar", emoji: "🔥" },
-      { title: "Rygg mot rygg", slug: "rygg-mot-rygg", emoji: "🪑" },
-    ],
-  },
-];
 
 export function RulesSidebar() {
   const pathname = usePathname();
@@ -92,10 +53,12 @@ export function RulesSidebar() {
         )}
       >
         <div className="p-6 pt-20 md:pt-6">
-          <h2 className="mb-6 text-xl font-bold">Spelregler</h2>
+          <Link href="/spelregler">
+            <h2 className="mb-6 text-xl font-bold">Spelregler</h2>
+          </Link>
 
           <div className="space-y-2">
-            {gameCategories.map((category) => (
+            {GAME_CATEGORIES.map((category) => (
               <div key={category.name} className="space-y-1">
                 <button
                   onClick={() => toggleCategory(category.name)}
@@ -114,11 +77,11 @@ export function RulesSidebar() {
                     {category.games.map((game) => (
                       <Link
                         key={game.slug}
-                        href={`/rules/${game.slug}`}
+                        href={`/spelregler/${game.slug}`}
                         onClick={() => setIsMobileMenuOpen(false)}
                         className={cn(
                           "flex w-full items-center gap-2 rounded-md p-2 text-sm",
-                          pathname === `/rules/${game.slug}`
+                          pathname === `/spelregler/${game.slug}`
                             ? "bg-yellow font-medium text-black"
                             : "hover:bg-yellow hover:text-accent-foreground",
                         )}

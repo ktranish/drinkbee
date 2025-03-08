@@ -46,7 +46,7 @@ export default function GamePage() {
         </h1>
 
         <div className="mb-8 flex justify-center">
-          <Link href={`/rules/med-andra-ord`}>
+          <Link href={`/spelregler/med-andra-ord`}>
             <Button variant="outline" className="flex items-center gap-2">
               <BookOpen className="h-4 w-4" />
               <span>Visa spelregler</span>

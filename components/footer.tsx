@@ -59,7 +59,7 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/rules"
+                  href="/spelregler"
                   className="text-gray-400 transition-colors hover:text-yellow"
                 >
                   Spelregler

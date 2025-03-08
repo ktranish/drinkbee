@@ -1,5 +1,44 @@
 export type Category = (typeof ALL_GAMES)[number]["category"];
 
+export const GAME_CATEGORIES = [
+  {
+    name: "Popular",
+    games: [
+      { title: "Med andra ord", slug: "med-andra-ord", emoji: "🎯" },
+      { title: "200 Frågor", slug: "200-fragor", emoji: "❓" },
+      { title: "Jag har aldrig", slug: "jag-har-aldrig", emoji: "🙅‍♂️" },
+      { title: "Pekleken", slug: "pekleken", emoji: "👉" },
+    ],
+  },
+  {
+    name: "Party",
+    games: [
+      { title: "Snurra flaskan", slug: "snurra-flaskan", emoji: "🍾" },
+      {
+        title: "Sanning eller Konka",
+        slug: "sanning-eller-konka",
+        emoji: "🎭",
+      },
+      { title: "Vem i rummet", slug: "vem-i-rummet", emoji: "👥" },
+    ],
+  },
+  {
+    name: "Fun",
+    games: [
+      { title: "Gissa låten", slug: "gissa-laten", emoji: "🎵" },
+      { title: "Charades", slug: "charades", emoji: "🎬" },
+      { title: "0-100 Frågor", slug: "0-100-fragor", emoji: "🧠" },
+    ],
+  },
+  {
+    name: "Extreme",
+    games: [
+      { title: "Utmaningar", slug: "utmaningar", emoji: "🔥" },
+      { title: "Rygg mot rygg", slug: "rygg-mot-rygg", emoji: "🪑" },
+    ],
+  },
+];
+
 export const ALL_GAMES = [
   {
     title: "Med andra ord",
@@ -8,6 +47,8 @@ export const ALL_GAMES = [
     color: "bg-gray-50",
     category: "sallskapsspel",
     url: "/sallskapsspel/med-andra-ord",
+    description:
+      "Ett ordförklaringsspel där du ska få ditt lag att gissa ett ord utan att använda förbjudna termer.",
   },
   {
     title: "200 Frågor",
@@ -16,6 +57,8 @@ export const ALL_GAMES = [
     color: "bg-blue-50",
     category: "quiz",
     url: "/quiz/200-fragor",
+    description:
+      "Ett frågespel som hjälper er att lära känna varandra bättre genom personliga och utmanande frågor.",
   },
   {
     title: "Jag har aldrig",
@@ -24,6 +67,8 @@ export const ALL_GAMES = [
     color: "bg-yellow-50",
     category: "dricklekar-och-drickspel",
     url: "/dricklekar-och-drickspel/jag-har-aldrig",
+    description:
+      "Ett avslöjande spel där spelare berättar om saker de aldrig har gjort, och de som har gjort det måste dricka.",
   },
   {
     title: "Pekleken",
@@ -32,6 +77,8 @@ export const ALL_GAMES = [
     color: "bg-purple-50",
     category: "dricklekar-och-drickspel",
     url: "/dricklekar-och-drickspel/pekleken",
+    description:
+      "Ett enkelt men roligt spel där spelarna pekar på varandra baserat på olika påståenden.",
   },
   {
     title: "Snurra flaskan",
@@ -40,6 +87,8 @@ export const ALL_GAMES = [
     color: "bg-green-50",
     category: "dricklekar-och-drickspel",
     url: "/dricklekar-och-drickspel/snurra-flaskan",
+    description:
+      "Ett klassiskt partyspel där spelarna snurrar en flaska och får utmaningar eller sanningar att besvara.",
   },
   {
     title: "Sanning eller Konka",
@@ -48,6 +97,8 @@ export const ALL_GAMES = [
     color: "bg-blue-50",
     category: "sallskapsspel",
     url: "/sallskapsspel/sanning-eller-konka",
+    description:
+      "Välj mellan att svara ärligt på en fråga eller utföra en utmaning.",
   },
   {
     title: "Vem i rummet",
@@ -56,6 +107,8 @@ export const ALL_GAMES = [
     color: "bg-purple-50",
     category: "dricklekar-och-drickspel",
     url: "/dricklekar-och-drickspel/vem-i-rummet",
+    description:
+      "Svara på frågor om vilken person i rummet som mest sannolikt skulle göra olika saker.",
   },
   {
     title: "Gissa låten",
@@ -64,6 +117,8 @@ export const ALL_GAMES = [
     color: "bg-blue-50",
     category: "quiz",
     url: "/quiz/gissa-laten",
+    description:
+      "Testa dina musikkunskaper genom att gissa låtar baserat på korta ljudklipp.",
   },
   {
     title: "Charades",
@@ -72,6 +127,7 @@ export const ALL_GAMES = [
     color: "bg-amber-50",
     category: "sallskapsspel",
     url: "/sallskapsspel/charades",
+    description: "Förklara ord eller fraser genom att agera utan att prata.",
   },
   {
     title: "0-100 Frågor",
@@ -80,6 +136,8 @@ export const ALL_GAMES = [
     color: "bg-purple-50",
     category: "quiz",
     url: "/quiz/0-100-fragor",
+    description:
+      "Ett roligt gissningsspel där spelarna ska uppskatta svaren på frågor med siffror mellan 0 och 100.",
   },
   {
     title: "Utmaningar",
@@ -88,6 +146,7 @@ export const ALL_GAMES = [
     color: "bg-red-50",
     category: "sallskapsspel",
     url: "/sallskapsspel/utmaningar",
+    description: "Våga utföra roliga och utmanande uppgifter för att få poäng.",
   },
   {
     title: "Rygg mot rygg",
@@ -96,6 +155,8 @@ export const ALL_GAMES = [
     color: "bg-orange-50",
     category: "dricklekar-och-drickspel",
     url: "/dricklekar-och-drickspel/rygg-mot-rygg",
+    description:
+      "Ett roligt och avslöjande spel där två spelare sitter rygg mot rygg och svarar på frågor.",
   },
 ] as const;
 

@@ -135,7 +135,7 @@ export default function SpinTheBottlePage() {
         </h1>
 
         <div className="mb-8 flex justify-center">
-          <Link href={`/rules/snurra-flaskan`}>
+          <Link href={`/spelregler/snurra-flaskan`}>
             <Button variant="outline" className="flex items-center gap-2">
               <BookOpen className="h-4 w-4" />
               <span>Visa spelregler</span>

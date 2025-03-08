@@ -55,7 +55,7 @@ export function MobileNav() {
           </div>
 
           <nav className="flex flex-col space-y-6">
-            <Link href={"/rules"} onClick={toggleMenu}>
+            <Link href={"/spelregler"} onClick={toggleMenu}>
               <Button
                 variant={"ghost"}
                 className="w-full justify-start text-lg font-bold uppercase"
