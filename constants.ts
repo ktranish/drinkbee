@@ -47,7 +47,7 @@ export const ALL_GAMES = [
     slug: "sanning-eller-konka",
     color: "bg-blue-50",
     category: "sallskapsspel",
-    url: "/sallskapsspel-sanning-eller-konka",
+    url: "/sallskapsspel/sanning-eller-konka",
   },
   {
     title: "Vem i rummet",
@@ -212,3 +212,34 @@ export const ANIMATION_POSITIONS = [
     },
   ],
 ];
+
+export const QUESTIONS_DATA = {
+  popular: [
+    "Vad är din största osäkerhet?",
+    "Vad är din bästa egenskap?",
+    "Om du kunde resa vart som helst, vart skulle du åka?",
+    "Vad är din största rädsla?",
+    "Vad är ditt bästa minne?",
+  ],
+  party: [
+    "Vem i rummet skulle du vilja byta liv med för en dag?",
+    "Berätta om ditt mest pinsamma ögonblick",
+    "Vem i rummet skulle klara sig bäst i en zombieapokalyps?",
+    "Vem i rummet skulle du ringa om du hamnade i fängelse?",
+    "Vem i rummet skulle du vilja vara fast i en hiss med?",
+  ],
+  fun: [
+    "Vilken superkraft skulle du vilja ha?",
+    "Om du var ett djur, vilket skulle du vara?",
+    "Vilken är din favoritfilm?",
+    "Vad skulle du göra om du vann en miljon kronor?",
+    "Vilken är din favoritmat?",
+  ],
+  extreme: [
+    "Vad är det galnaste du någonsin gjort?",
+    "Berätta om ditt värsta dejt",
+    "Vad är din största hemlighet?",
+    "Vad är det mest olagliga du gjort?",
+    "Vad är det mest extrema du skulle göra för pengar?",
+  ],
+};

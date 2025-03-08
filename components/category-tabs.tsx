@@ -44,7 +44,7 @@ export function CategoryTabs({
         onClick={() => handleCategoryChange("dricklekar-och-drickspel")}
       >
         <PartyPopper className="mr-2 h-4 w-4" />
-        <span>Drickspel & Dricklekar</span>
+        <span>Dricklekar & drickspel</span>
       </Button>
 
       <Button

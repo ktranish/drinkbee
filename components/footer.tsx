@@ -89,17 +89,20 @@ export function Footer() {
             <h3 className="mb-4 text-lg font-bold text-yellow">Kategorier</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/alla-spel" className="text-gray-400">
-                  Drickspel och Dricklekar
+                <Link
+                  href="/dricklekar-och-drickspel"
+                  className="text-gray-400"
+                >
+                  Dricklekar & drickspel
                 </Link>
               </li>
               <li>
-                <Link href="/alla-spel" className="text-gray-400">
+                <Link href="/sallskapsspel" className="text-gray-400">
                   Sällskapspel
                 </Link>
               </li>
               <li>
-                <Link href="/alla-spel" className="text-gray-400">
+                <Link href="/quiz" className="text-gray-400">
                   Quiz
                 </Link>
               </li>
