@@ -65,10 +65,10 @@ export default function Home() {
     ],
     party: [
       {
-        title: "Dryckesspel",
-        emoji: "🍻",
-        slug: "dryckesspel",
-        color: "bg-amber-50",
+        title: "Snurra flaskan",
+        emoji: "🍾",
+        slug: "snurra-flaskan",
+        color: "bg-green-50",
       },
       {
         title: "Sanning eller Konka",
@@ -94,7 +94,7 @@ export default function Home() {
         title: "Charades",
         emoji: "🎬",
         slug: "charades",
-        color: "bg-green-50",
+        color: "bg-amber-50",
       },
       { title: "Quiz", emoji: "🧠", slug: "quiz", color: "bg-purple-50" },
     ],

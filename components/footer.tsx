@@ -15,7 +15,7 @@ const gameCategories = [
   {
     name: "Party",
     games: [
-      { title: "Dryckesspel", slug: "dryckesspel" },
+      { title: "Snurra flaskan", slug: "snurra-flaskan" },
       { title: "Sanning eller Konka", slug: "sanning-eller-konka" },
       { title: "Vem i rummet", slug: "vem-i-rummet" },
     ],

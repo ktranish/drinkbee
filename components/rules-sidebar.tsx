@@ -21,7 +21,7 @@ const gameCategories = [
   {
     name: "Party",
     games: [
-      { title: "Dryckesspel", slug: "dryckesspel", emoji: "🍻" },
+      { title: "Snurra flaskan", slug: "snurra-flaskan", emoji: "🍾" },
       {
         title: "Sanning eller Konka",
         slug: "sanning-eller-konka",

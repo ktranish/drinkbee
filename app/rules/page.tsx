@@ -33,11 +33,11 @@ const gamesOverview = [
       "Ett enkelt men roligt spel där spelarna pekar på varandra baserat på olika påståenden.",
   },
   {
-    title: "Dryckesspel",
-    emoji: "🍻",
-    slug: "dryckesspel",
+    title: "Snurra Flaskan",
+    emoji: "🍾",
+    slug: "snurra-flaskan",
     description:
-      "Ett klassiskt dryckesspel med olika regler och utmaningar kopplade till en kortlek.",
+      "Ett klassiskt partyspel där spelarna snurrar en flaska och får utmaningar eller sanningar att besvara.",
   },
   {
     title: "Sanning eller Konka",

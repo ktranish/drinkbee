@@ -39,9 +39,9 @@ export default function GamesPage() {
     ],
     party: [
       {
-        title: "Dryckesspel",
-        emoji: "🍻",
-        slug: "dryckesspel",
+        title: "Snurra flaskan",
+        emoji: "🍾",
+        slug: "snurra-flaskan",
         color: "bg-amber-50",
       },
       {
@@ -68,7 +68,7 @@ export default function GamesPage() {
         title: "Charades",
         emoji: "🎬",
         slug: "charades",
-        color: "bg-green-50",
+        color: "bg-amber-50",
       },
       { title: "Quiz", emoji: "🧠", slug: "quiz", color: "bg-purple-50" },
     ],
