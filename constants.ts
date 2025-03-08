@@ -270,8 +270,8 @@ export const GAME_RULES: { [key: string]: GameRules } = {
   //     "Sätt en tidsbegränsning på hur länge spelarna får fundera på sitt svar.",
   //   ],
   // },
-  charades: {
-    title: "Charades",
+  charader: {
+    title: "Charader",
     emoji: "🎬",
     description:
       "Ett klassiskt partyspel där spelare ska gestikulera ord och fraser utan att tala medan andra försöker gissa.",
@@ -432,7 +432,7 @@ export const GAME_CATEGORIES = [
     name: "Fun",
     games: [
       // { title: "Gissa låten", slug: "gissa-laten", emoji: "🎵" },
-      { title: "Charades", slug: "charades", emoji: "🎬" },
+      { title: "Charader", slug: "charader", emoji: "🎬" },
       { title: "0-100 Frågor", slug: "0-100-fragor", emoji: "🧠" },
     ],
   },
@@ -527,12 +527,12 @@ export const ALL_GAMES = [
   //     "Testa dina musikkunskaper genom att gissa låtar baserat på korta ljudklipp.",
   // },
   {
-    title: "Charades",
+    title: "Charader",
     emoji: "🎬",
-    slug: "charades",
+    slug: "charader",
     color: "bg-amber-50",
     category: "sallskapsspel",
-    url: "/sallskapsspel/charades",
+    url: "/sallskapsspel/charader",
     description: "Förklara ord eller fraser genom att agera utan att prata.",
   },
   {

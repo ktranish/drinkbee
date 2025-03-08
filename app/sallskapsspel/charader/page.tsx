@@ -36,17 +36,17 @@ export default function GamePage() {
         <Breadcrumb
           items={[
             { label: "Sällskapsspel", href: "/sallskapsspel" },
-            { label: "Charades" },
+            { label: "Charader" },
           ]}
           className="mb-8 self-start"
         />
 
         <h1 className="mb-8 animate-fade-in text-center text-3xl font-bold text-black dark:text-white md:text-4xl">
-          Charades
+          Charader
         </h1>
 
         <div className="mb-8 flex justify-center">
-          <Link href={`/spelregler/charades`}>
+          <Link href={`/spelregler/charader`}>
             <Button variant="outline" className="flex items-center gap-2">
               <BookOpen className="h-4 w-4" />
               <span>Visa spelregler</span>
