@@ -40,7 +40,7 @@ export default function GamesPage() {
               key={game.slug}
               title={game.title}
               emoji={game.emoji}
-              slug={game.slug}
+              url={game.url}
               color={game.color}
             />
           ))}

@@ -44,7 +44,7 @@ export default function Home() {
               key={game.slug}
               title={game.title}
               emoji={game.emoji}
-              slug={game.slug}
+              url={game.url}
               color={game.color}
             />
           ))}

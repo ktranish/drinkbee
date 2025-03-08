@@ -7,6 +7,7 @@ export const ALL_GAMES = [
     slug: "med-andra-ord",
     color: "bg-gray-50",
     category: "sallskapsspel",
+    url: "/sallskapsspel/med-andra-ord",
   },
   {
     title: "200 Frågor",
@@ -14,6 +15,7 @@ export const ALL_GAMES = [
     slug: "200-fragor",
     color: "bg-blue-50",
     category: "quiz",
+    url: "/quiz/200-fragor",
   },
   {
     title: "Jag har aldrig",
@@ -21,6 +23,7 @@ export const ALL_GAMES = [
     slug: "jag-har-aldrig",
     color: "bg-yellow-50",
     category: "dricklekar-och-drickspel",
+    url: "/dricklekar-och-drickspel/jag-har-aldrig",
   },
   {
     title: "Pekleken",
@@ -28,6 +31,7 @@ export const ALL_GAMES = [
     slug: "pekleken",
     color: "bg-purple-50",
     category: "dricklekar-och-drickspel",
+    url: "/dricklekar-och-drickspel/pekleken",
   },
   {
     title: "Snurra flaskan",
@@ -35,6 +39,7 @@ export const ALL_GAMES = [
     slug: "snurra-flaskan",
     color: "bg-green-50",
     category: "dricklekar-och-drickspel",
+    url: "/dricklekar-och-drickspel/snurra-flaskan",
   },
   {
     title: "Sanning eller Konka",
@@ -42,6 +47,7 @@ export const ALL_GAMES = [
     slug: "sanning-eller-konka",
     color: "bg-blue-50",
     category: "sallskapsspel",
+    url: "/sallskapsspel-sanning-eller-konka",
   },
   {
     title: "Vem i rummet",
@@ -49,6 +55,7 @@ export const ALL_GAMES = [
     slug: "vem-i-rummet",
     color: "bg-purple-50",
     category: "dricklekar-och-drickspel",
+    url: "/dricklekar-och-drickspel/vem-i-rummet",
   },
   {
     title: "Gissa låten",
@@ -56,6 +63,7 @@ export const ALL_GAMES = [
     slug: "gissa-laten",
     color: "bg-blue-50",
     category: "quiz",
+    url: "/quiz/gissa-laten",
   },
   {
     title: "Charades",
@@ -63,6 +71,7 @@ export const ALL_GAMES = [
     slug: "charades",
     color: "bg-amber-50",
     category: "sallskapsspel",
+    url: "/sallskapsspel/charades",
   },
   {
     title: "0-100 Frågor",
@@ -70,6 +79,7 @@ export const ALL_GAMES = [
     slug: "0-100-fragor",
     color: "bg-purple-50",
     category: "quiz",
+    url: "/quiz/0-100-fragor",
   },
   {
     title: "Utmaningar",
@@ -77,6 +87,7 @@ export const ALL_GAMES = [
     slug: "utmaningar",
     color: "bg-red-50",
     category: "sallskapsspel",
+    url: "/sallskapsspel/utmaningar",
   },
   {
     title: "Rygg mot rygg",
@@ -84,6 +95,7 @@ export const ALL_GAMES = [
     slug: "rygg-mot-rygg",
     color: "bg-orange-50",
     category: "dricklekar-och-drickspel",
+    url: "/dricklekar-och-drickspel/rygg-mot-rygg",
   },
 ] as const;
 

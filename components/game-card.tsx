@@ -4,11 +4,11 @@ import Link from "next/link";
 interface GameCardProps {
   title: string;
   emoji: string;
-  slug: string;
+  url: string;
   color: string;
 }
 
-export function GameCard({ title, emoji, slug, color }: GameCardProps) {
+export function GameCard({ title, emoji, url, color }: GameCardProps) {
   return (
     <div
       className={`game-card overflow-hidden rounded-xl ${color} flex h-full flex-col items-center justify-between p-6 shadow-lg backdrop-blur-sm`}
@@ -24,7 +24,7 @@ export function GameCard({ title, emoji, slug, color }: GameCardProps) {
         </span>
       </div>
 
-      <Link href={`/alla-spel/${slug}`} className="mt-4">
+      <Link href={url || "/"} className="mt-4">
         <Button variant="play" className="font-bold uppercase">
           Spela
         </Button>
