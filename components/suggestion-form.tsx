@@ -2,6 +2,7 @@
 
 import type React from "react";
 
+import { sendDiscordNotification } from "@/app/actions";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
@@ -18,7 +19,11 @@ export function SuggestionForm() {
     setIsSubmitting(true);
 
     // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    await sendDiscordNotification(
+      "✅ User has sent in a suggestion",
+      { suggestion },
+      "🎉",
+    );
 
     // Show success message
     setShowSuccess(true);
