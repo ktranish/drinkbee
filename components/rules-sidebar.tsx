@@ -35,14 +35,14 @@ const gameCategories = [
     games: [
       { title: "Gissa låten", slug: "gissa-laten", emoji: "🎵" },
       { title: "Charades", slug: "charades", emoji: "🎬" },
-      { title: "Quiz", slug: "quiz", emoji: "🧠" },
+      { title: "0-100 Frågor", slug: "0-100-fragor", emoji: "🧠" },
     ],
   },
   {
     name: "Extreme",
     games: [
       { title: "Utmaningar", slug: "utmaningar", emoji: "🔥" },
-      { title: "Hot Seat", slug: "hot-seat", emoji: "🪑" },
+      { title: "Rygg mot rygg", slug: "rygg-mot-rygg", emoji: "🪑" },
     ],
   },
 ];

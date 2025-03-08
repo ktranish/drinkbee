@@ -1,42 +1,6 @@
 import { Github, Instagram, Twitter } from "lucide-react";
 import Link from "next/link";
 
-// Game categories with their respective games
-const gameCategories = [
-  {
-    name: "Popular",
-    games: [
-      { title: "Med andra ord", slug: "med-andra-ord" },
-      { title: "200 Frågor", slug: "200-fragor" },
-      { title: "Jag har aldrig", slug: "jag-har-aldrig" },
-      { title: "Pekleken", slug: "pekleken" },
-    ],
-  },
-  {
-    name: "Party",
-    games: [
-      { title: "Snurra flaskan", slug: "snurra-flaskan" },
-      { title: "Sanning eller Konka", slug: "sanning-eller-konka" },
-      { title: "Vem i rummet", slug: "vem-i-rummet" },
-    ],
-  },
-  {
-    name: "Fun",
-    games: [
-      { title: "Gissa låten", slug: "gissa-laten" },
-      { title: "Charades", slug: "charades" },
-      { title: "Quiz", slug: "quiz" },
-    ],
-  },
-  {
-    name: "Extreme",
-    games: [
-      { title: "Utmaningar", slug: "utmaningar" },
-      { title: "Hot Seat", slug: "hot-seat" },
-    ],
-  },
-];
-
 export function Footer() {
   return (
     <footer className="border-t border-yellow/20 bg-black pb-8 pt-16 text-white">
@@ -95,14 +59,6 @@ export function Footer() {
               </li>
               <li>
                 <Link
-                  href="/games"
-                  className="text-gray-400 transition-colors hover:text-yellow"
-                >
-                  Alla Spel
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/rules"
                   className="text-gray-400 transition-colors hover:text-yellow"
                 >
@@ -124,11 +80,26 @@ export function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-bold text-yellow">Kategorier</h3>
             <ul className="space-y-2">
-              {gameCategories.map((category) => (
-                <li key={category.name}>
-                  <span className="text-gray-400">{category.name}</span>
-                </li>
-              ))}
+              <li>
+                <Link href="/" className="text-gray-400">
+                  Alla Spel
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="text-gray-400">
+                  Drickspel och Dricklekar
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="text-gray-400">
+                  Sällskapspel
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="text-gray-400">
+                  0-100 Frågor
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -138,19 +109,102 @@ export function Footer() {
               Populära Spel
             </h3>
             <ul className="space-y-2">
-              {gameCategories
-                .flatMap((category) => category.games)
-                .slice(0, 6)
-                .map((game) => (
-                  <li key={game.slug}>
-                    <Link
-                      href={`/games/${game.slug}`}
-                      className="text-gray-400 transition-colors hover:text-yellow"
-                    >
-                      {game.title}
-                    </Link>
-                  </li>
-                ))}
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-400 transition-colors hover:text-yellow"
+                >
+                  Med andra ord
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-400 transition-colors hover:text-yellow"
+                >
+                  200 Frågor
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-400 transition-colors hover:text-yellow"
+                >
+                  Jag har aldrig
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-400 transition-colors hover:text-yellow"
+                >
+                  Pekleken
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-400 transition-colors hover:text-yellow"
+                >
+                  Snurra flaskan
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-400 transition-colors hover:text-yellow"
+                >
+                  Sanning eller konka
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-400 transition-colors hover:text-yellow"
+                >
+                  Vem i rummet
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-400 transition-colors hover:text-yellow"
+                >
+                  Gissa låten
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-400 transition-colors hover:text-yellow"
+                >
+                  Charades
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-400 transition-colors hover:text-yellow"
+                >
+                  0-100 Frågor
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-400 transition-colors hover:text-yellow"
+                >
+                  Utmaningar
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/"
+                  className="text-gray-400 transition-colors hover:text-yellow"
+                >
+                  Rygg mot rygg
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

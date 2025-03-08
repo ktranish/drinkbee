@@ -106,11 +106,11 @@ export default function GamePage({ params }: { params: { slug: string } }) {
                           ? "🎵"
                           : params.slug === "charades"
                             ? "🎬"
-                            : params.slug === "quiz"
+                            : params.slug === "0-100-fragor"
                               ? "🧠"
                               : params.slug === "utmaningar"
                                 ? "🔥"
-                                : params.slug === "hot-seat"
+                                : params.slug === "rygg-mot-rygg"
                                   ? "🪑"
                                   : "🎮"}
         </div>

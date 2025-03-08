@@ -67,10 +67,11 @@ const gamesOverview = [
     description: "Förklara ord eller fraser genom att agera utan att prata.",
   },
   {
-    title: "Quiz",
+    title: "0-100 Frågor",
     emoji: "🧠",
-    slug: "quiz",
-    description: "Testa dina kunskaper inom olika ämnen med våra quizfrågor.",
+    slug: "0-100-fragor",
+    description:
+      "Ett roligt gissningsspel där spelarna ska uppskatta svaren på frågor med siffror mellan 0 och 100.",
   },
   {
     title: "Utmaningar",
@@ -79,11 +80,11 @@ const gamesOverview = [
     description: "Våga utföra roliga och utmanande uppgifter för att få poäng.",
   },
   {
-    title: "Hot Seat",
+    title: "Rygg mot rygg",
     emoji: "🪑",
-    slug: "hot-seat",
+    slug: "rygg-mot-rygg",
     description:
-      "En person hamnar i 'hot seat' och måste svara ärligt på alla frågor från gruppen.",
+      "Ett roligt och avslöjande spel där två spelare sitter rygg mot rygg och svarar på frågor.",
   },
 ];
 

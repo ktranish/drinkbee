@@ -70,7 +70,12 @@ export default function GamesPage() {
         slug: "charades",
         color: "bg-amber-50",
       },
-      { title: "Quiz", emoji: "🧠", slug: "quiz", color: "bg-purple-50" },
+      {
+        title: "0-100 Frågor",
+        emoji: "🧠",
+        slug: "0-100-fragor",
+        color: "bg-purple-50",
+      },
     ],
     extreme: [
       {
@@ -80,9 +85,9 @@ export default function GamesPage() {
         color: "bg-red-50",
       },
       {
-        title: "Hot Seat",
+        title: "Rygg mot rygg",
         emoji: "🪑",
-        slug: "hot-seat",
+        slug: "rygg-mot-rygg",
         color: "bg-orange-50",
       },
     ],
