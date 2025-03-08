@@ -120,9 +120,9 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     <main className="flex min-h-screen flex-col items-center bg-white dark:bg-black">
       <Header />
 
-      <article className="container mx-auto max-w-4xl px-4 py-12">
+      <article className="container mx-auto max-w-4xl px-6 py-12">
         <Breadcrumb
-          items={[{ label: "Blog", href: "/blog" }, { label: article.title }]}
+          items={[{ label: "Blogg", href: "/blogg" }, { label: article.title }]}
           className="mb-8"
         />
 
@@ -204,7 +204,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
               {relatedArticles.map((relatedArticle) => (
                 <Link
                   key={relatedArticle.slug}
-                  href={`/blog/${relatedArticle.slug}`}
+                  href={`/blogg/${relatedArticle.slug}`}
                   className="group"
                 >
                   <div className="h-full overflow-hidden rounded-xl border border-gray-200 bg-white transition-all duration-300 group-hover:shadow-md dark:border-gray-800 dark:bg-gray-900">

@@ -14,7 +14,7 @@ export default function GamesPage() {
     <main className="flex min-h-screen flex-col items-center bg-white dark:bg-black">
       <Header />
 
-      <section className="container mx-auto max-w-6xl px-4 py-12">
+      <section className="container mx-auto max-w-6xl px-6 pb-12 pt-6">
         <Breadcrumb
           items={[{ label: "Spel", href: "/alla-spel" }]}
           className="mb-8"

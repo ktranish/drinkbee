@@ -87,7 +87,7 @@ export function SuggestionForm() {
                 : "pointer-events-none translate-y-8 opacity-0",
             )}
           >
-            <span className="rounded-full bg-green-500 px-4 py-2 text-sm font-medium text-white">
+            <span className="rounded-full bg-green-500 px-6 py-2 text-sm font-medium text-white">
               Tack för ditt förslag! 🎉
             </span>
           </div>

@@ -105,18 +105,21 @@ export const HERO_CARDS = [
     emoji: "🎯",
     slug: "med-andra-ord",
     color: "bg-gray-50",
+    url: "/sallskapsspel/med-andra-ord",
   },
   {
     title: "200 Frågor",
     emoji: "❓",
     slug: "200-fragor",
     color: "bg-blue-50",
+    url: "/quiz/200-fragor",
   },
   {
     title: "Jag har aldrig",
     emoji: "🙅‍♂️",
     slug: "jag-har-aldrig",
     color: "bg-yellow-50",
+    url: "/dricklekar-och-drickspel/jag-har-aldrig",
   },
 ];
 

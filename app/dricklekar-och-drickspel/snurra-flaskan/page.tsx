@@ -118,7 +118,7 @@ export default function SpinTheBottlePage() {
     <main className="flex min-h-screen flex-col items-center bg-white dark:bg-black">
       <Header />
 
-      <section className="container mx-auto flex max-w-6xl flex-grow flex-col items-center px-4 py-12">
+      <section className="container mx-auto flex max-w-6xl flex-grow flex-col items-center px-6 pb-12 pt-6">
         <Breadcrumb
           items={[
             {

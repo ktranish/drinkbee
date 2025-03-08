@@ -30,7 +30,7 @@ export function Hero() {
   }, []);
   return (
     <section className="relative w-full overflow-hidden py-16 md:py-24">
-      <div className="container relative z-10 mx-auto max-w-6xl px-4">
+      <div className="container relative z-10 mx-auto max-w-6xl px-6">
         <div className="flex flex-col items-center justify-between gap-12 md:flex-row">
           {/* Hero content */}
           <div className="space-y-6 text-center md:w-1/2 md:text-left">
@@ -79,11 +79,11 @@ export function Hero() {
                       transitionDuration: "2s",
                     }}
                   >
-                    <Link href={`/alla-spel/${card.slug}`}>
+                    <Link href={card.url}>
                       <GameCard
                         title={card.title}
                         emoji={card.emoji}
-                        slug={card.slug}
+                        url={card.url}
                         color={card.color}
                       />
                     </Link>

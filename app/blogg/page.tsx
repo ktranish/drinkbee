@@ -39,12 +39,12 @@ export default function BlogPage() {
     <main className="flex min-h-screen flex-col items-center bg-white dark:bg-black">
       <Header />
 
-      <section className="container mx-auto max-w-6xl px-4 py-12">
-        <Breadcrumb items={[{ label: "Blog" }]} className="mb-8" />
+      <section className="container mx-auto max-w-6xl px-6 py-12">
+        <Breadcrumb items={[{ label: "Blogg" }]} className="mb-8" />
 
         <div className="mb-16 text-center">
           <h1 className="mb-4 text-4xl font-bold text-black dark:text-white md:text-5xl">
-            Drinkbee Blog
+            Drinkbee Blogg
           </h1>
           <p className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-400">
             Tips, tricks och inspiration för att göra dina spelkvällar ännu
@@ -78,7 +78,7 @@ export default function BlogPage() {
               key={article.slug}
               className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md transition-shadow duration-300 hover:shadow-lg dark:border-gray-800 dark:bg-gray-900"
             >
-              <Link href={`/blog/${article.slug}`}>
+              <Link href={`/blogg/${article.slug}`}>
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={article.coverImage || "/placeholder.svg"}
@@ -103,7 +103,7 @@ export default function BlogPage() {
                   </div>
                 </div>
 
-                <Link href={`/blog/${article.slug}`}>
+                <Link href={`/blogg/${article.slug}`}>
                   <h2 className="mb-3 text-xl font-bold text-black transition-colors hover:text-yellow dark:text-white dark:hover:text-yellow">
                     {article.title}
                   </h2>
@@ -114,7 +114,7 @@ export default function BlogPage() {
                 </p>
 
                 <Link
-                  href={`/blog/${article.slug}`}
+                  href={`/blogg/${article.slug}`}
                   className="inline-flex items-center font-medium text-yellow hover:underline"
                 >
                   Läs mer
