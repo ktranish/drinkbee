@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 import { Lightbulb, SendHorizontal } from "lucide-react";
+import { useReCaptcha } from "next-recaptcha-v3";
 import { useState } from "react";
 
 export function SuggestionForm() {
@@ -14,8 +15,28 @@ export function SuggestionForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
+  const { executeRecaptcha } = useReCaptcha();
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    const token = await executeRecaptcha("form_submit");
+
+    const recaptchaResponse = await fetch("/api/verify-recaptcha", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ token }),
+    });
+
+    const recaptchaData = await recaptchaResponse.json();
+
+    if (!recaptchaResponse.ok || !recaptchaData.success) {
+      alert("reCAPTCHA verification failed. Please try again.");
+      return;
+    }
+
     setIsSubmitting(true);
 
     // Simulate API call

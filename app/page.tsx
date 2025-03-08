@@ -8,6 +8,7 @@ import { SuggestionForm } from "@/components/suggestion-form";
 import { Button } from "@/components/ui/button";
 import { ALL_GAMES, Category } from "@/constants";
 import { ArrowRight } from "lucide-react";
+import { ReCaptchaProvider } from "next-recaptcha-v3";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -63,7 +64,11 @@ export default function Home() {
       {/* Suggestion section */}
       <section className="w-full border-t border-gray-200 bg-white py-20 dark:border-gray-800 dark:bg-black">
         <div className="container mx-auto max-w-6xl px-6">
-          <SuggestionForm />
+          <ReCaptchaProvider
+            reCaptchaKey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
+          >
+            <SuggestionForm />
+          </ReCaptchaProvider>
         </div>
       </section>
     </main>
