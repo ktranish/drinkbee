@@ -15,72 +15,72 @@ export interface GameRules {
 }
 
 export const GAME_RULES: { [key: string]: GameRules } = {
-  "med-andra-ord": {
-    title: "Med andra ord",
-    emoji: "🎯",
-    description:
-      "Ett ordförklaringsspel där du ska få ditt lag att gissa ett ord utan att använda förbjudna termer.",
-    objective:
-      "Få ditt lag att gissa så många ord som möjligt inom tidsgränsen.",
-    players: "4+ spelare (jämna lag)",
-    duration: "15-30 minuter",
-    difficulty: "Medel",
-    materials: [
-      "Timer",
-      "Ordkort eller app",
-      "Papper och penna för poängräkning",
-    ],
-    setup: [
-      "Dela upp spelarna i två eller fler jämna lag.",
-      "Bestäm en tidsgräns för varje runda (vanligtvis 60 sekunder).",
-      "Förbered ordkort eller använd Drinkbee-appen för att generera ord.",
-    ],
-    rules: [
-      "En spelare från det aktiva laget tar ett kort och försöker få sitt lag att gissa ordet.",
-      "Spelaren får INTE använda ordet självt eller delar av ordet.",
-      "Spelaren får INTE använda översättningar av ordet eller ljud som låter som ordet.",
-      "Om laget gissar rätt, tar spelaren ett nytt kort och fortsätter.",
-      "Om spelaren använder ett förbjudet ord eller ger upp, hoppa över kortet.",
-      "När tiden är ute, räkna antalet korrekt gissade ord. Detta är lagets poäng för rundan.",
-      "Turen går vidare till nästa lag.",
-      "Spela tills alla lag har haft lika många turer.",
-    ],
-    tips: [
-      "Använd synonymer och beskrivningar.",
-      "Tänk på hur föremålet används eller var det finns.",
-      "Använd motsatser ('inte kall' för 'varm').",
-      "Var kreativ med förklaringar men håll dig till reglerna.",
-    ],
-  },
-  "200-fragor": {
-    title: "200 Frågor",
-    emoji: "❓",
-    description:
-      "Ett frågespel som hjälper er att lära känna varandra bättre genom personliga och utmanande frågor.",
-    objective:
-      "Svara på frågor för att skapa diskussion och lära känna varandra bättre.",
-    players: "2+ spelare",
-    duration: "Varierar (15-60 minuter)",
-    difficulty: "Lätt",
-    materials: ["Frågor från Drinkbee-appen eller kort"],
-    setup: [
-      "Samla alla spelare i en cirkel.",
-      "Förbered frågorna genom att använda Drinkbee-appen eller utskrivna kort.",
-    ],
-    rules: [
-      "Turas om att dra en fråga.",
-      "Läs frågan högt och svara ärligt.",
-      "Alla spelare måste svara på frågan innan ni går vidare till nästa.",
-      "Spelare kan välja att 'passa' på en fråga, men uppmuntra ärlighet.",
-      "Fortsätt tills ni har gått igenom önskat antal frågor.",
-    ],
-    tips: [
-      "Skapa en trygg miljö där alla känner sig bekväma att dela.",
-      "Respektera om någon inte vill svara på en specifik fråga.",
-      "Lyssna aktivt när andra svarar.",
-      "Följ upp med följdfrågor för att fördjupa samtalet.",
-    ],
-  },
+  // "med-andra-ord": {
+  //   title: "Med andra ord",
+  //   emoji: "🎯",
+  //   description:
+  //     "Ett ordförklaringsspel där du ska få ditt lag att gissa ett ord utan att använda förbjudna termer.",
+  //   objective:
+  //     "Få ditt lag att gissa så många ord som möjligt inom tidsgränsen.",
+  //   players: "4+ spelare (jämna lag)",
+  //   duration: "15-30 minuter",
+  //   difficulty: "Medel",
+  //   materials: [
+  //     "Timer",
+  //     "Ordkort eller app",
+  //     "Papper och penna för poängräkning",
+  //   ],
+  //   setup: [
+  //     "Dela upp spelarna i två eller fler jämna lag.",
+  //     "Bestäm en tidsgräns för varje runda (vanligtvis 60 sekunder).",
+  //     "Förbered ordkort eller använd Drinkbee-appen för att generera ord.",
+  //   ],
+  //   rules: [
+  //     "En spelare från det aktiva laget tar ett kort och försöker få sitt lag att gissa ordet.",
+  //     "Spelaren får INTE använda ordet självt eller delar av ordet.",
+  //     "Spelaren får INTE använda översättningar av ordet eller ljud som låter som ordet.",
+  //     "Om laget gissar rätt, tar spelaren ett nytt kort och fortsätter.",
+  //     "Om spelaren använder ett förbjudet ord eller ger upp, hoppa över kortet.",
+  //     "När tiden är ute, räkna antalet korrekt gissade ord. Detta är lagets poäng för rundan.",
+  //     "Turen går vidare till nästa lag.",
+  //     "Spela tills alla lag har haft lika många turer.",
+  //   ],
+  //   tips: [
+  //     "Använd synonymer och beskrivningar.",
+  //     "Tänk på hur föremålet används eller var det finns.",
+  //     "Använd motsatser ('inte kall' för 'varm').",
+  //     "Var kreativ med förklaringar men håll dig till reglerna.",
+  //   ],
+  // },
+  // "200-fragor": {
+  //   title: "200 Frågor",
+  //   emoji: "❓",
+  //   description:
+  //     "Ett frågespel som hjälper er att lära känna varandra bättre genom personliga och utmanande frågor.",
+  //   objective:
+  //     "Svara på frågor för att skapa diskussion och lära känna varandra bättre.",
+  //   players: "2+ spelare",
+  //   duration: "Varierar (15-60 minuter)",
+  //   difficulty: "Lätt",
+  //   materials: ["Frågor från Drinkbee-appen eller kort"],
+  //   setup: [
+  //     "Samla alla spelare i en cirkel.",
+  //     "Förbered frågorna genom att använda Drinkbee-appen eller utskrivna kort.",
+  //   ],
+  //   rules: [
+  //     "Turas om att dra en fråga.",
+  //     "Läs frågan högt och svara ärligt.",
+  //     "Alla spelare måste svara på frågan innan ni går vidare till nästa.",
+  //     "Spelare kan välja att 'passa' på en fråga, men uppmuntra ärlighet.",
+  //     "Fortsätt tills ni har gått igenom önskat antal frågor.",
+  //   ],
+  //   tips: [
+  //     "Skapa en trygg miljö där alla känner sig bekväma att dela.",
+  //     "Respektera om någon inte vill svara på en specifik fråga.",
+  //     "Lyssna aktivt när andra svarar.",
+  //     "Följ upp med följdfrågor för att fördjupa samtalet.",
+  //   ],
+  // },
   "jag-har-aldrig": {
     title: "Jag har aldrig",
     emoji: "🙅‍♂️",
@@ -155,7 +155,7 @@ export const GAME_RULES: { [key: string]: GameRules } = {
     difficulty: "Lätt",
     materials: [
       "En flaska",
-      "Lista med frågor och utmaningar (eller använd DrinkBee-appen)",
+      "Lista med frågor och utmaningar (eller använd Drinkbee-appen)",
     ],
     setup: [
       "Samla alla spelare i en cirkel.",
@@ -177,99 +177,99 @@ export const GAME_RULES: { [key: string]: GameRules } = {
       "Se till att hålla spelet roligt och respektfullt.",
     ],
   },
-  "sanning-eller-konka": {
-    title: "Sanning eller Konka",
-    emoji: "🎭",
-    description:
-      "Ett klassiskt partyspel där spelare turas om att välja mellan att svara på en personlig fråga eller utföra en utmaning.",
-    objective:
-      "Ha roligt och lära känna varandra bättre genom att svara på frågor eller anta utmaningar.",
-    players: "3+ spelare",
-    duration: "15-45 minuter",
-    difficulty: "Lätt",
-    materials: [
-      "Lista med frågor och utmaningar (eller använd Drinkbee-appen)",
-    ],
-    setup: [
-      "Samla alla spelare i en cirkel.",
-      "Bestäm om ni vill använda förberedda frågor och utmaningar eller hitta på egna under spelet.",
-      "Bestäm om det ska finnas några gränser för vilka frågor eller utmaningar som är tillåtna.",
-    ],
-    rules: [
-      "En spelare får frågan 'Sanning eller konka?'.",
-      "Om spelaren väljer 'Sanning', får de en fråga och måste svara ärligt.",
-      "Om spelaren väljer 'Konka', får de en utmaning de måste genomföra.",
-      "Om en spelare vägrar både sanning och konka, kan de antingen dricka (i en dryckesvariant) eller få en straffutmaning.",
-      "Spelet fortsätter medsols tills alla har fått spela minst en gång eller tills gruppen bestämmer sig för att avsluta.",
-    ],
-    tips: [
-      "Håll spelet roligt och inkluderande – tvinga ingen att svara på något de inte är bekväma med.",
-      "Blanda sanningar och utmaningar för att hålla spelet intressant.",
-      "Sätt gränser innan spelet börjar om vissa frågor eller utmaningar är för mycket.",
-    ],
-  },
-  "vem-i-rummet": {
-    title: "Vem i rummet",
-    emoji: "👥",
-    description:
-      "Ett roligt och avslöjande spel där spelarna pekar ut vem i rummet som bäst passar in på olika påståenden.",
-    objective:
-      "Lära känna varandra bättre och ha kul genom att identifiera vem i gruppen som bäst passar in på olika påståenden.",
-    players: "3+ spelare",
-    duration: "15-45 minuter",
-    difficulty: "Lätt",
-    materials: ["Lista med påståenden (eller använd DrinkBee-appen)"],
-    setup: [
-      "Samla alla spelare i en cirkel så att alla kan se varandra.",
-      "Bestäm om ni vill använda förberedda påståenden eller hitta på egna under spelets gång.",
-    ],
-    rules: [
-      "En spelare läser upp ett påstående, exempelvis: 'Vem i rummet skulle klara sig bäst i en zombieapokalyps?'.",
-      "På räkningen tre pekar alla spelare samtidigt på den person de tycker bäst passar in på påståendet.",
-      "Den person som får flest pekningar kan få berätta varför de tror att de blev utpekade.",
-      "Spelet fortsätter medsols tills alla har fått läsa upp minst ett påstående, eller tills gruppen vill avsluta.",
-    ],
-    tips: [
-      "Var inte rädd att motivera ditt val efter att ha pekat.",
-      "Se till att hålla spelet roligt och lättsamt, undvik att göra någon obekväm.",
-      "Uppmuntra alla att vara ärliga men respektfulla.",
-      "Om någon får många pekningar på en fråga, låt dem berätta vad de själva tycker.",
-    ],
-  },
-  "gissa-laten": {
-    title: "Gissa låten",
-    emoji: "🎵",
-    description:
-      "Ett musikquiz där spelarna ska gissa låten så snabbt som möjligt utifrån en kort ljudsnutt eller en nynnad melodi.",
-    objective:
-      "Identifiera och gissa låtar snabbare än de andra spelarna för att samla poäng.",
-    players: "2+ spelare",
-    duration: "15-45 minuter",
-    difficulty: "Lätt till medel",
-    materials: [
-      "En musikspelare (Spotify, YouTube, Drinkbee-appen eller en spellista)",
-      "Penna och papper för poängräkning",
-    ],
-    setup: [
-      "Välj en spellista eller en samling låtar att använda.",
-      "Bestäm en spelläsare (DJ) som spelar upp ljudklipp från låtar.",
-      "Bestäm om spelarna ska gissa individuellt eller i lag.",
-      "Sätt regler för hur låtar spelas upp – exempelvis en kort snutt på 5 sekunder.",
-    ],
-    rules: [
-      "DJ:n spelar upp en kort del av en låt (kan vara början, en instrumental del eller en nynnad melodi).",
-      "Den första spelaren eller laget som gissar rätt får poäng.",
-      "För ett fullständigt poäng måste spelaren säga både låttitel och artist (kan anpassas).",
-      "Om ingen gissar rätt efter 10 sekunder, ges en ledtråd och en ny chans att svara.",
-      "Spelet fortsätter tills en viss poänggräns uppnås eller tills spellistan är slut.",
-    ],
-    tips: [
-      "Använd en mix av gamla och nya låtar för att göra spelet mer utmanande.",
-      "Låt en person nynna eller sjunga låten istället för att spela upp den för extra svårighet.",
-      "Spela bara en instrumentell del av låten för att göra det svårare.",
-      "Sätt en tidsbegränsning på hur länge spelarna får fundera på sitt svar.",
-    ],
-  },
+  // "sanning-eller-konka": {
+  //   title: "Sanning eller Konka",
+  //   emoji: "🎭",
+  //   description:
+  //     "Ett klassiskt partyspel där spelare turas om att välja mellan att svara på en personlig fråga eller utföra en utmaning.",
+  //   objective:
+  //     "Ha roligt och lära känna varandra bättre genom att svara på frågor eller anta utmaningar.",
+  //   players: "3+ spelare",
+  //   duration: "15-45 minuter",
+  //   difficulty: "Lätt",
+  //   materials: [
+  //     "Lista med frågor och utmaningar (eller använd Drinkbee-appen)",
+  //   ],
+  //   setup: [
+  //     "Samla alla spelare i en cirkel.",
+  //     "Bestäm om ni vill använda förberedda frågor och utmaningar eller hitta på egna under spelet.",
+  //     "Bestäm om det ska finnas några gränser för vilka frågor eller utmaningar som är tillåtna.",
+  //   ],
+  //   rules: [
+  //     "En spelare får frågan 'Sanning eller konka?'.",
+  //     "Om spelaren väljer 'Sanning', får de en fråga och måste svara ärligt.",
+  //     "Om spelaren väljer 'Konka', får de en utmaning de måste genomföra.",
+  //     "Om en spelare vägrar både sanning och konka, kan de antingen dricka (i en dryckesvariant) eller få en straffutmaning.",
+  //     "Spelet fortsätter medsols tills alla har fått spela minst en gång eller tills gruppen bestämmer sig för att avsluta.",
+  //   ],
+  //   tips: [
+  //     "Håll spelet roligt och inkluderande – tvinga ingen att svara på något de inte är bekväma med.",
+  //     "Blanda sanningar och utmaningar för att hålla spelet intressant.",
+  //     "Sätt gränser innan spelet börjar om vissa frågor eller utmaningar är för mycket.",
+  //   ],
+  // },
+  // "vem-i-rummet": {
+  //   title: "Vem i rummet",
+  //   emoji: "👥",
+  //   description:
+  //     "Ett roligt och avslöjande spel där spelarna pekar ut vem i rummet som bäst passar in på olika påståenden.",
+  //   objective:
+  //     "Lära känna varandra bättre och ha kul genom att identifiera vem i gruppen som bäst passar in på olika påståenden.",
+  //   players: "3+ spelare",
+  //   duration: "15-45 minuter",
+  //   difficulty: "Lätt",
+  //   materials: ["Lista med påståenden (eller använd Drinkbee-appen)"],
+  //   setup: [
+  //     "Samla alla spelare i en cirkel så att alla kan se varandra.",
+  //     "Bestäm om ni vill använda förberedda påståenden eller hitta på egna under spelets gång.",
+  //   ],
+  //   rules: [
+  //     "En spelare läser upp ett påstående, exempelvis: 'Vem i rummet skulle klara sig bäst i en zombieapokalyps?'.",
+  //     "På räkningen tre pekar alla spelare samtidigt på den person de tycker bäst passar in på påståendet.",
+  //     "Den person som får flest pekningar kan få berätta varför de tror att de blev utpekade.",
+  //     "Spelet fortsätter medsols tills alla har fått läsa upp minst ett påstående, eller tills gruppen vill avsluta.",
+  //   ],
+  //   tips: [
+  //     "Var inte rädd att motivera ditt val efter att ha pekat.",
+  //     "Se till att hålla spelet roligt och lättsamt, undvik att göra någon obekväm.",
+  //     "Uppmuntra alla att vara ärliga men respektfulla.",
+  //     "Om någon får många pekningar på en fråga, låt dem berätta vad de själva tycker.",
+  //   ],
+  // },
+  // "gissa-laten": {
+  //   title: "Gissa låten",
+  //   emoji: "🎵",
+  //   description:
+  //     "Ett musikquiz där spelarna ska gissa låten så snabbt som möjligt utifrån en kort ljudsnutt eller en nynnad melodi.",
+  //   objective:
+  //     "Identifiera och gissa låtar snabbare än de andra spelarna för att samla poäng.",
+  //   players: "2+ spelare",
+  //   duration: "15-45 minuter",
+  //   difficulty: "Lätt till medel",
+  //   materials: [
+  //     "En musikspelare (Spotify, YouTube, Drinkbee-appen eller en spellista)",
+  //     "Penna och papper för poängräkning",
+  //   ],
+  //   setup: [
+  //     "Välj en spellista eller en samling låtar att använda.",
+  //     "Bestäm en spelläsare (DJ) som spelar upp ljudklipp från låtar.",
+  //     "Bestäm om spelarna ska gissa individuellt eller i lag.",
+  //     "Sätt regler för hur låtar spelas upp – exempelvis en kort snutt på 5 sekunder.",
+  //   ],
+  //   rules: [
+  //     "DJ:n spelar upp en kort del av en låt (kan vara början, en instrumental del eller en nynnad melodi).",
+  //     "Den första spelaren eller laget som gissar rätt får poäng.",
+  //     "För ett fullständigt poäng måste spelaren säga både låttitel och artist (kan anpassas).",
+  //     "Om ingen gissar rätt efter 10 sekunder, ges en ledtråd och en ny chans att svara.",
+  //     "Spelet fortsätter tills en viss poänggräns uppnås eller tills spellistan är slut.",
+  //   ],
+  //   tips: [
+  //     "Använd en mix av gamla och nya låtar för att göra spelet mer utmanande.",
+  //     "Låt en person nynna eller sjunga låten istället för att spela upp den för extra svårighet.",
+  //     "Spela bara en instrumentell del av låten för att göra det svårare.",
+  //     "Sätt en tidsbegränsning på hur länge spelarna får fundera på sitt svar.",
+  //   ],
+  // },
   charades: {
     title: "Charades",
     emoji: "🎬",
@@ -316,7 +316,7 @@ export const GAME_RULES: { [key: string]: GameRules } = {
     duration: "15-45 minuter",
     difficulty: "Lätt till medel",
     materials: [
-      "Lista med frågor (eller använd DrinkBee-appen)",
+      "Lista med frågor (eller använd Drinkbee-appen)",
       "Poängräkning (papper och penna)",
       "Timer (valfritt)",
     ],
@@ -339,41 +339,40 @@ export const GAME_RULES: { [key: string]: GameRules } = {
       "Variera mellan individuella och lagbaserade omgångar för variation.",
     ],
   },
-
-  utmaningar: {
-    title: "Utmaningar",
-    emoji: "🔥",
-    description:
-      "Ett spännande spel där spelarna får olika utmaningar att utföra, från roliga till extrema.",
-    objective:
-      "Utföra så många utmaningar som möjligt för att samla poäng och vinna spelet.",
-    players: "2+ spelare",
-    duration: "15-60 minuter",
-    difficulty: "Lätt till svår (beroende på utmaningarna)",
-    materials: [
-      "Lista med utmaningar (eller använd Drinkbee-appen)",
-      "Timer (valfritt)",
-      "Eventuella rekvisita för vissa utmaningar",
-    ],
-    setup: [
-      "Samla spelarna i en cirkel.",
-      "Förbered en lista med utmaningar eller använd Drinkbee-appen för att generera dem.",
-      "Bestäm regler för att hoppa över utmaningar (t.ex. dricka, få minuspoäng eller en straffutmaning).",
-    ],
-    rules: [
-      "Varje spelare turas om att dra en utmaning.",
-      "Spelaren måste antingen utföra utmaningen eller välja att hoppa över den (med en påföljd).",
-      "Om utmaningen utförs korrekt får spelaren poäng.",
-      "Vissa utmaningar kan kräva en domare eller röstning från gruppen för att avgöra om den klarats.",
-      "Spelet fortsätter tills en viss poänggräns uppnås eller tills alla har gjort ett visst antal utmaningar.",
-    ],
-    tips: [
-      "Anpassa utmaningarna efter gruppens komfortnivå.",
-      "Blanda lätta, roliga och extrema utmaningar för variation.",
-      "Uppmuntra spelarna att verkligen gå in för sina utmaningar.",
-      "Se till att alla får lika många utmaningar.",
-    ],
-  },
+  // utmaningar: {
+  //   title: "Utmaningar",
+  //   emoji: "🔥",
+  //   description:
+  //     "Ett spännande spel där spelarna får olika utmaningar att utföra, från roliga till extrema.",
+  //   objective:
+  //     "Utföra så många utmaningar som möjligt för att samla poäng och vinna spelet.",
+  //   players: "2+ spelare",
+  //   duration: "15-60 minuter",
+  //   difficulty: "Lätt till svår (beroende på utmaningarna)",
+  //   materials: [
+  //     "Lista med utmaningar (eller använd Drinkbee-appen)",
+  //     "Timer (valfritt)",
+  //     "Eventuella rekvisita för vissa utmaningar",
+  //   ],
+  //   setup: [
+  //     "Samla spelarna i en cirkel.",
+  //     "Förbered en lista med utmaningar eller använd Drinkbee-appen för att generera dem.",
+  //     "Bestäm regler för att hoppa över utmaningar (t.ex. dricka, få minuspoäng eller en straffutmaning).",
+  //   ],
+  //   rules: [
+  //     "Varje spelare turas om att dra en utmaning.",
+  //     "Spelaren måste antingen utföra utmaningen eller välja att hoppa över den (med en påföljd).",
+  //     "Om utmaningen utförs korrekt får spelaren poäng.",
+  //     "Vissa utmaningar kan kräva en domare eller röstning från gruppen för att avgöra om den klarats.",
+  //     "Spelet fortsätter tills en viss poänggräns uppnås eller tills alla har gjort ett visst antal utmaningar.",
+  //   ],
+  //   tips: [
+  //     "Anpassa utmaningarna efter gruppens komfortnivå.",
+  //     "Blanda lätta, roliga och extrema utmaningar för variation.",
+  //     "Uppmuntra spelarna att verkligen gå in för sina utmaningar.",
+  //     "Se till att alla får lika många utmaningar.",
+  //   ],
+  // },
   "rygg-mot-rygg": {
     title: "Rygg mot Rygg",
     emoji: "🪑",
@@ -384,7 +383,7 @@ export const GAME_RULES: { [key: string]: GameRules } = {
     players: "4+ spelare",
     duration: "15-30 minuter",
     difficulty: "Lätt",
-    materials: ["Lista med frågor (eller använd DrinkBee-appen)"],
+    materials: ["Lista med frågor (eller använd Drinkbee-appen)"],
     setup: [
       "Välj två spelare som börjar och låt dem sätta sig rygg mot rygg i mitten av rummet.",
       "Bestäm en frågeställare som läser upp påståenden.",
@@ -411,8 +410,8 @@ export const GAME_CATEGORIES = [
   {
     name: "Popular",
     games: [
-      { title: "Med andra ord", slug: "med-andra-ord", emoji: "🎯" },
-      { title: "200 Frågor", slug: "200-fragor", emoji: "❓" },
+      // { title: "Med andra ord", slug: "med-andra-ord", emoji: "🎯" },
+      // { title: "200 Frågor", slug: "200-fragor", emoji: "❓" },
       { title: "Jag har aldrig", slug: "jag-har-aldrig", emoji: "🙅‍♂️" },
       { title: "Pekleken", slug: "pekleken", emoji: "👉" },
     ],
@@ -421,18 +420,18 @@ export const GAME_CATEGORIES = [
     name: "Party",
     games: [
       { title: "Snurra flaskan", slug: "snurra-flaskan", emoji: "🍾" },
-      {
-        title: "Sanning eller Konka",
-        slug: "sanning-eller-konka",
-        emoji: "🎭",
-      },
-      { title: "Vem i rummet", slug: "vem-i-rummet", emoji: "👥" },
+      // {
+      //   title: "Sanning eller Konka",
+      //   slug: "sanning-eller-konka",
+      //   emoji: "🎭",
+      // },
+      // { title: "Vem i rummet", slug: "vem-i-rummet", emoji: "👥" },
     ],
   },
   {
     name: "Fun",
     games: [
-      { title: "Gissa låten", slug: "gissa-laten", emoji: "🎵" },
+      // { title: "Gissa låten", slug: "gissa-laten", emoji: "🎵" },
       { title: "Charades", slug: "charades", emoji: "🎬" },
       { title: "0-100 Frågor", slug: "0-100-fragor", emoji: "🧠" },
     ],
@@ -440,33 +439,33 @@ export const GAME_CATEGORIES = [
   {
     name: "Extreme",
     games: [
-      { title: "Utmaningar", slug: "utmaningar", emoji: "🔥" },
+      // { title: "Utmaningar", slug: "utmaningar", emoji: "🔥" },
       { title: "Rygg mot rygg", slug: "rygg-mot-rygg", emoji: "🪑" },
     ],
   },
 ];
 
 export const ALL_GAMES = [
-  {
-    title: "Med andra ord",
-    emoji: "🎯",
-    slug: "med-andra-ord",
-    color: "bg-gray-50",
-    category: "sallskapsspel",
-    url: "/sallskapsspel/med-andra-ord",
-    description:
-      "Ett ordförklaringsspel där du ska få ditt lag att gissa ett ord utan att använda förbjudna termer.",
-  },
-  {
-    title: "200 Frågor",
-    emoji: "❓",
-    slug: "200-fragor",
-    color: "bg-blue-50",
-    category: "quiz",
-    url: "/quiz/200-fragor",
-    description:
-      "Ett frågespel som hjälper er att lära känna varandra bättre genom personliga och utmanande frågor.",
-  },
+  // {
+  //   title: "Med andra ord",
+  //   emoji: "🎯",
+  //   slug: "med-andra-ord",
+  //   color: "bg-gray-50",
+  //   category: "sallskapsspel",
+  //   url: "/sallskapsspel/med-andra-ord",
+  //   description:
+  //     "Ett ordförklaringsspel där du ska få ditt lag att gissa ett ord utan att använda förbjudna termer.",
+  // },
+  // {
+  //   title: "200 Frågor",
+  //   emoji: "❓",
+  //   slug: "200-fragor",
+  //   color: "bg-blue-50",
+  //   category: "quiz",
+  //   url: "/quiz/200-fragor",
+  //   description:
+  //     "Ett frågespel som hjälper er att lära känna varandra bättre genom personliga och utmanande frågor.",
+  // },
   {
     title: "Jag har aldrig",
     emoji: "🙅‍♂️",
@@ -497,36 +496,36 @@ export const ALL_GAMES = [
     description:
       "Ett klassiskt partyspel där spelarna snurrar en flaska och får utmaningar eller sanningar att besvara.",
   },
-  {
-    title: "Sanning eller Konka",
-    emoji: "🎭",
-    slug: "sanning-eller-konka",
-    color: "bg-blue-50",
-    category: "sallskapsspel",
-    url: "/sallskapsspel/sanning-eller-konka",
-    description:
-      "Välj mellan att svara ärligt på en fråga eller utföra en utmaning.",
-  },
-  {
-    title: "Vem i rummet",
-    emoji: "👥",
-    slug: "vem-i-rummet",
-    color: "bg-purple-50",
-    category: "dricklekar-och-drickspel",
-    url: "/dricklekar-och-drickspel/vem-i-rummet",
-    description:
-      "Svara på frågor om vilken person i rummet som mest sannolikt skulle göra olika saker.",
-  },
-  {
-    title: "Gissa låten",
-    emoji: "🎵",
-    slug: "gissa-laten",
-    color: "bg-blue-50",
-    category: "quiz",
-    url: "/quiz/gissa-laten",
-    description:
-      "Testa dina musikkunskaper genom att gissa låtar baserat på korta ljudklipp.",
-  },
+  // {
+  //   title: "Sanning eller Konka",
+  //   emoji: "🎭",
+  //   slug: "sanning-eller-konka",
+  //   color: "bg-blue-50",
+  //   category: "sallskapsspel",
+  //   url: "/sallskapsspel/sanning-eller-konka",
+  //   description:
+  //     "Välj mellan att svara ärligt på en fråga eller utföra en utmaning.",
+  // },
+  // {
+  //   title: "Vem i rummet",
+  //   emoji: "👥",
+  //   slug: "vem-i-rummet",
+  //   color: "bg-purple-50",
+  //   category: "dricklekar-och-drickspel",
+  //   url: "/dricklekar-och-drickspel/vem-i-rummet",
+  //   description:
+  //     "Svara på frågor om vilken person i rummet som mest sannolikt skulle göra olika saker.",
+  // },
+  // {
+  //   title: "Gissa låten",
+  //   emoji: "🎵",
+  //   slug: "gissa-laten",
+  //   color: "bg-blue-50",
+  //   category: "quiz",
+  //   url: "/quiz/gissa-laten",
+  //   description:
+  //     "Testa dina musikkunskaper genom att gissa låtar baserat på korta ljudklipp.",
+  // },
   {
     title: "Charades",
     emoji: "🎬",
@@ -546,15 +545,15 @@ export const ALL_GAMES = [
     description:
       "Ett roligt gissningsspel där spelarna ska uppskatta svaren på frågor med siffror mellan 0 och 100.",
   },
-  {
-    title: "Utmaningar",
-    emoji: "🔥",
-    slug: "utmaningar",
-    color: "bg-red-50",
-    category: "sallskapsspel",
-    url: "/sallskapsspel/utmaningar",
-    description: "Våga utföra roliga och utmanande uppgifter för att få poäng.",
-  },
+  // {
+  //   title: "Utmaningar",
+  //   emoji: "🔥",
+  //   slug: "utmaningar",
+  //   color: "bg-red-50",
+  //   category: "sallskapsspel",
+  //   url: "/sallskapsspel/utmaningar",
+  //   description: "Våga utföra roliga och utmanande uppgifter för att få poäng.",
+  // },
   {
     title: "Rygg mot rygg",
     emoji: "🪑",
@@ -569,25 +568,34 @@ export const ALL_GAMES = [
 
 export const HERO_CARDS = [
   {
-    title: "Med andra ord",
-    emoji: "🎯",
-    slug: "med-andra-ord",
-    color: "bg-gray-50",
-    url: "/sallskapsspel/med-andra-ord",
-  },
-  {
-    title: "200 Frågor",
-    emoji: "❓",
-    slug: "200-fragor",
-    color: "bg-blue-50",
-    url: "/quiz/200-fragor",
-  },
-  {
     title: "Jag har aldrig",
     emoji: "🙅‍♂️",
     slug: "jag-har-aldrig",
     color: "bg-yellow-50",
+    category: "dricklekar-och-drickspel",
     url: "/dricklekar-och-drickspel/jag-har-aldrig",
+    description:
+      "Ett avslöjande spel där spelare berättar om saker de aldrig har gjort, och de som har gjort det måste dricka.",
+  },
+  {
+    title: "Pekleken",
+    emoji: "👉",
+    slug: "pekleken",
+    color: "bg-purple-50",
+    category: "dricklekar-och-drickspel",
+    url: "/dricklekar-och-drickspel/pekleken",
+    description:
+      "Ett enkelt men roligt spel där spelarna pekar på varandra baserat på olika påståenden.",
+  },
+  {
+    title: "Snurra flaskan",
+    emoji: "🍾",
+    slug: "snurra-flaskan",
+    color: "bg-green-50",
+    category: "dricklekar-och-drickspel",
+    url: "/dricklekar-och-drickspel/snurra-flaskan",
+    description:
+      "Ett klassiskt partyspel där spelarna snurrar en flaska och får utmaningar eller sanningar att besvara.",
   },
 ];
 
