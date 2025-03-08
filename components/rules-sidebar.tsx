@@ -87,7 +87,7 @@ export function RulesSidebar() {
         className={cn(
           "w-full flex-shrink-0 overflow-y-auto border-r border-border bg-background md:w-64 lg:w-72",
           "transition-all duration-300 ease-in-out",
-          "fixed top-0 z-40 h-screen md:sticky md:top-[86px] md:h-[calc(100vh-86px)]",
+          "fixed top-10 z-40 h-screen md:sticky md:top-[86px] md:h-[calc(100vh-86px)]",
           isMobileMenuOpen ? "left-0" : "-left-full md:left-0",
         )}
       >
