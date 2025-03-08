@@ -97,7 +97,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/" className="text-gray-400">
-                  0-100 Frågor
+                  Quiz
                 </Link>
               </li>
             </ul>

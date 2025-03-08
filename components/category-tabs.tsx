@@ -1,23 +1,26 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Flame, Grid, PartyPopper, Sparkles, Trophy } from "lucide-react";
+import { Category } from "@/constants";
+import { Flame, Grid, PartyPopper, Sparkles } from "lucide-react";
 import { useState } from "react";
 
 interface CategoryTabsProps {
-  onCategoryChange: (category: string) => void;
+  onCategoryChange: (category: Category | "all") => void;
   includeAll?: boolean;
-  defaultCategory?: string;
+  defaultCategory?: Category | "all";
 }
 
 export function CategoryTabs({
   onCategoryChange,
   includeAll = false,
-  defaultCategory = "popular",
+  defaultCategory = "all",
 }: CategoryTabsProps) {
-  const [activeCategory, setActiveCategory] = useState(defaultCategory);
+  const [activeCategory, setActiveCategory] = useState<Category | "all">(
+    defaultCategory,
+  );
 
-  const handleCategoryChange = (category: string) => {
+  const handleCategoryChange = (category: Category | "all") => {
     setActiveCategory(category);
     onCategoryChange(category);
   };
@@ -37,38 +40,29 @@ export function CategoryTabs({
 
       <Button
         variant="category"
-        className={`category-button flex items-center ${activeCategory === "popular" ? "bg-yellow text-black dark:bg-yellow dark:text-black" : ""}`}
-        onClick={() => handleCategoryChange("popular")}
-      >
-        <Trophy className="mr-2 h-4 w-4" />
-        <span>Popular</span>
-      </Button>
-
-      <Button
-        variant="category"
-        className={`category-button flex items-center ${activeCategory === "party" ? "bg-yellow text-black dark:bg-yellow dark:text-black" : ""}`}
-        onClick={() => handleCategoryChange("party")}
+        className={`category-button flex items-center ${activeCategory === "dricklekar-och-drickspel" ? "bg-yellow text-black dark:bg-yellow dark:text-black" : ""}`}
+        onClick={() => handleCategoryChange("dricklekar-och-drickspel")}
       >
         <PartyPopper className="mr-2 h-4 w-4" />
-        <span>Party</span>
+        <span>Drickspel & Dricklekar</span>
       </Button>
 
       <Button
         variant="category"
-        className={`category-button flex items-center ${activeCategory === "fun" ? "bg-yellow text-black dark:bg-yellow dark:text-black" : ""}`}
-        onClick={() => handleCategoryChange("fun")}
+        className={`category-button flex items-center ${activeCategory === "sallskapsspel" ? "bg-yellow text-black dark:bg-yellow dark:text-black" : ""}`}
+        onClick={() => handleCategoryChange("sallskapsspel")}
       >
         <Sparkles className="mr-2 h-4 w-4" />
-        <span>Fun</span>
+        <span>Sällskapsspel</span>
       </Button>
 
       <Button
         variant="category"
-        className={`category-button flex items-center ${activeCategory === "extreme" ? "bg-yellow text-black dark:bg-yellow dark:text-black" : ""}`}
-        onClick={() => handleCategoryChange("extreme")}
+        className={`category-button flex items-center ${activeCategory === "quiz" ? "bg-yellow text-black dark:bg-yellow dark:text-black" : ""}`}
+        onClick={() => handleCategoryChange("quiz")}
       >
         <Flame className="mr-2 h-4 w-4" />
-        <span>Extreme</span>
+        <span>Quiz</span>
       </Button>
     </div>
   );
