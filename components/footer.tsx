@@ -65,14 +65,14 @@ export function Footer() {
                   Spelregler
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   href="/blogg"
                   className="text-gray-400 transition-colors hover:text-yellow"
                 >
                   Blogg
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link
                   href="/kontakta-oss"

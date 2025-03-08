@@ -63,14 +63,14 @@ export function MobileNav() {
                 Regler
               </Button>
             </Link>
-            <Link href={"/blogg"} onClick={toggleMenu}>
+            {/* <Link href={"/blogg"} onClick={toggleMenu}>
               <Button
                 variant={"ghost"}
                 className="w-full justify-start text-lg font-bold uppercase"
               >
                 Blogg
               </Button>
-            </Link>
+            </Link> */}
             <Link href={"/alla-spel"} onClick={toggleMenu}>
               <Button
                 variant={"ghost"}
